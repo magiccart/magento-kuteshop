@@ -1,0 +1,561 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <cms_block>
+      <title><![CDATA[Footer Links Company]]></title>
+      <identifier><![CDATA[footer_links_company]]></identifier>
+      <content><![CDATA[<div class="footer-menu-box">
+<div class="col-sm-12">
+<ul class="footer-menu-list">
+<li><a href="#">Company Info - Partnerships</a></li>
+</ul>
+</div>
+<div class="col-sm-12">
+<ul class="footer-menu-list">
+<li><a href="#">Online Shopping</a></li>
+<li><a href="#">Promotions</a></li>
+<li><a href="#">My Orders</a></li>
+<li><a href="#">Help</a></li>
+<li><a href="#">Site Map</a></li>
+<li><a href="#">Customer Service</a></li>
+<li><a href="#">Support</a></li>
+</ul>
+</div>
+<div class="col-sm-12">
+<ul class="footer-menu-list">
+<li><a href="#">Most Populars</a></li>
+<li><a href="#">Best Sellers</a></li>
+<li><a href="#">New Arrivals</a></li>
+<li><a href="#">Special Products</a></li>
+<li><a href="#">Manufacturers</a></li>
+<li><a href="#">Our Stores</a></li>
+<li><a href="#">Shipping</a></li>
+<li><a href="#">Payments</a></li>
+<li><a href="#">Warantee</a></li>
+<li><a href="#">Refunds</a></li>
+<li><a href="#">Checkout</a></li>
+<li><a href="#">Discount</a></li>
+</ul>
+</div>
+<div class="col-sm-12">
+<ul class="footer-menu-list">
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Policy</a></li>
+<li><a href="#">Shipping</a></li>
+<li><a href="#">Payments</a></li>
+<li><a href="#">Returns</a></li>
+<li><a href="#">Refunds</a></li>
+<li><a href="#">Warrantee</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[block_footer_top]]></title>
+      <identifier><![CDATA[block_footer_top]]></identifier>
+      <content><![CDATA[<div class="row">
+<div class="col-lg-3 col-md-3  col-xs-12">
+<div class="collapsible mobile-collapsible">
+<div class="block1 block-content-statick"><a class="introduce-logo" href="#"> <img class="img-responsive logo1" alt="" src="{{media url="wysiwyg/alothemes/static/introduce-logo.png"}}" /> <img class="img-responsive logo2" alt="" src="{{media url="wysiwyg/alothemes/static/logo2.png"}}" /> <img class="img-responsive logo5" alt="" src="{{media url="wysiwyg/alothemes/static/logo5.png"}}" /><img class="img-responsive logo6" alt="" src="{{media url="wysiwyg/alothemes/static/logo6.png"}}" /></a>
+<ul class="address-list">
+<li class="feature-icon first">
+<p class="no-margin"><span class="tit-name">Address:</span><span class="tit-contain">Example Street 68, Mahattan, New York, USA.</span></p>
+</li>
+<li class="feature-icon">
+<p><span class="tit-name">Phone:</span><span class="tit-contain">+84 912. 345. 678</span></p>
+</li>
+<li class="feature-icon">
+<p><span class="tit-name">Email:</span><span class="tit-contain">suport@alothemes.com</span></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-xs-12">
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading">Company</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<div class="block-content block-content-statick toggle-content">
+<ul class="bullet">
+<li><a href="#">Help</a></li>
+<li><a href="#">Gift Cards</a></li>
+<li><a href="#">Order Status</a></li>
+<li><a href="#">Returns &amp; Exchanges</a></li>
+<li><a href="#">International</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading">My Account</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<div class="block-content block-content-statick toggle-content">
+<ul class="bullet">
+<li><a href="{{store url=""}}about-magento-demo-store/">About Us</a></li>
+<li><a href="#">Jobs</a></li>
+<li><a href="#">Affiliates</a></li>
+<li><a href="#">Meet The Maker</a></li>
+<li><a href="{{store url=""}}contacts/">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading">Support</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<div class="block-content block-content-statick toggle-content">
+<ul class="bullet">
+<li><a href="#">Security</a></li>
+<li><a href="#">Privacy</a></li>
+<li><a href="#">Text Messaging</a></li>
+<li><a href="#">Legal</a></li>
+<li><a href="#">Supply chain</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3  col-xs-12">
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading">Newsletter</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<div class="block1 block-content-statick toggle-content">
+<div class="block-newletter">{{block type="newsletter/subscribe" template="newsletter/subscribe.phtml"}}</div>
+</div>
+</div>
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading introduce-title">Let's Socialize</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<ul class="list-inline toggle-content">
+<li><a class="social-link facebook" href="#"><i class="fa fa-facebook"><span class="hidden">facebook</span></i></a></li>
+<li><a class="social-link pinterest-p" href="#"><i class="fa fa-pinterest-p"><span class="hidden">pinterest</span></i></a></li>
+<li><a class="social-link vk" href="#"><i class="fa fa-vk"><span class="hidden">fa-vk</span></i></a></li>
+<li><a class="social-link twitter" href="#"><i class="fa fa-twitter"><span class="hidden">twitter</span></i></a></li>
+<li><a class="social-link google-plus" href="#"><i class="fa fa-google-plus"><span class="hidden">google-plus</span></i></a></li>
+</ul>
+</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[block_footer_bottom]]></title>
+      <identifier><![CDATA[block_footer_bottom]]></identifier>
+      <content><![CDATA[<div class="row trademark-box">
+<div class="col-sm-12">
+<ul class="trademark-list-top">
+<li id="payment-methods">Accepted Payment Methods</li>
+<li><a href="#"><img class="img-responsive" alt="ups" src="{{media url="wysiwyg/alothemes/static/trademark-ups.jpg"}}" /></a></li>
+<li><a href="#"><img class="img-responsive" alt="ups" src="{{media url="wysiwyg/alothemes/static/trademark-qiwi.jpg"}}" /></a></li>
+<li><a href="#"><img class="img-responsive" alt="ups" src="{{media url="wysiwyg/alothemes/static/trademark-wu.jpg"}}" /></a></li>
+<li><a href="#"><img class="img-responsive" alt="ups" src="{{media url="wysiwyg/alothemes/static/trademark-cn.jpg"}}" /> </a></li>
+<li><a href="#"><img class="img-responsive" alt="ups" src="{{media url="wysiwyg/alothemes/static/trademark-visa.jpg"}}" /></a></li>
+<li><a href="#"><img class="img-responsive" alt="ups" src="{{media url="wysiwyg/alothemes/static/trademark-mc.jpg"}}" /></a></li>
+<li><a href="#"><img class="img-responsive" alt="ups" src="{{media url="wysiwyg/alothemes/static/trademark-ems.jpg"}}" /></a></li>
+<li><a href="#"><img class="img-responsive" alt="ups" src="{{media url="wysiwyg/alothemes/static/trademark-dhl.jpg"}}" /></a></li>
+<li><a href="#"><img class="img-responsive" alt="ups" src="{{media url="wysiwyg/alothemes/static/trademark-fe.jpg"}}" /></a></li>
+<li><a href="#"><img class="img-responsive" alt="ups" src="{{media url="wysiwyg/alothemes/static/trademark-wm.jpg"}}" /></a></li>
+</ul>
+</div>
+</div>
+<div class="row trademark-text-box">
+<div class="col-sm-12">
+<ul class="trademark-search-list trademark-list">
+<li class="trademark-text-tit">HOT SEARCHED KEYWORDS:</li>
+<li><a href="#">Xiaomio Mi3</a></li>
+<li><a href="#">Digiflipo Pro XT 712 Tablet</a></li>
+<li><a href="#">Mi 3 Phones</a></li>
+<li><a href="#">Iphoneo 6 Plus</a></li>
+<li><a href="#">Women's Messenger Bags</a></li>
+<li><a href="#">Wallets</a></li>
+<li><a href="#">Women's Clutches</a></li>
+<li><a href="#">Backpacks Totes</a></li>
+</ul>
+</div>
+<div class="col-sm-12">
+<ul class="trademark-tv-list trademark-list">
+<li class="trademark-text-tit">TVS:</li>
+<li><a href="#">Sonyo TV</a></li>
+<li><a href="#">Samsing TV</a></li>
+<li><a href="#">LGG TV</a></li>
+<li><a href="#">Onidai TV</a></li>
+<li><a href="#">Toshibao TV</a></li>
+<li><a href="#">Philipsi TV</a></li>
+<li><a href="#">Micromaxo TV</a></li>
+<li><a href="#">LED TV</a></li>
+<li><a href="#">LCD TV</a></li>
+<li><a href="#">Plasma TV</a></li>
+<li><a href="#">3D TV</a></li>
+<li><a href="#">Smart TV</a></li>
+</ul>
+</div>
+<div class="col-sm-12">
+<ul class="trademark-mobile-list trademark-list">
+<li class="trademark-text-tit">MOBILES:</li>
+<li><a href="#">Moto E</a></li>
+<li><a href="#">Samsing Mobile</a></li>
+<li><a href="#">Micromaxi Mobile</a></li>
+<li><a href="#">Nokian Mobile</a></li>
+<li><a href="#">HTCi Mobile</a></li>
+<li><a href="#">Sonyo Mobile</a></li>
+<li><a href="#">Appleo Mobile</a></li>
+<li><a href="#">LGG Mobile</a></li>
+<li><a href="#">Karbonni Mobile</a></li>
+</ul>
+</div>
+<div class="col-sm-12">
+<ul class="trademark-laptop-list trademark-list">
+<li class="trademark-text-tit">LAPTOPS::</li>
+<li><a href="#">Appleo Laptop</a></li>
+<li><a href="#">Acer Laptop</a></li>
+<li><a href="#">Samsing Laptop</a></li>
+<li><a href="#">Lenov Laptop</a></li>
+<li><a href="#">Sonyo Laptop</a></li>
+<li><a href="#">Delli Laptop</a></li>
+<li><a href="#">Asuso Laptop</a></li>
+<li><a href="#">Toshibao Laptop</a></li>
+<li><a href="#">LGG Laptop</a></li>
+<li><a href="#">HPo Laptop</a></li>
+<li><a href="#">Notebook</a></li>
+</ul>
+</div>
+<div class="col-sm-12">
+<ul class="trademark-watches-list trademark-list">
+<li class="trademark-text-tit">WATCHES:</li>
+<li><a href="#">FCUKo Watches</a></li>
+<li><a href="#">Titan Watches</a></li>
+<li><a href="#">Casioo Watches</a></li>
+<li><a href="#">Fastrack Watches</a></li>
+<li><a href="#">Timexi Watches</a></li>
+<li><a href="#">Fossili Watches</a></li>
+<li><a href="#">Dieselo Watches</a></li>
+<li><a href="#">Toshibao Laptop</a></li>
+<li><a href="#">Luxury Watches</a></li>
+</ul>
+</div>
+<div class="col-sm-12">
+<ul class="trademark-shoes-lis trademark-list">
+<li class="trademark-text-tit">FOOTWEAR:</li>
+<li><a href="#">Shoes</a></li>
+<li><a href="#">Casual Shoes</a></li>
+<li><a href="#">Sports Shoes</a></li>
+<li><a href="#">Adidasi Shoes</a></li>
+<li><a href="#">Gas Shoes</a></li>
+<li><a href="#">Pumai Shoes</a></li>
+<li><a href="#">Reeboki Shoes</a></li>
+<li><a href="#">Woodlandi Shoes</a></li>
+<li><a href="#">Red tape Shoes</a></li>
+<li><a href="#">Nikeo Shoes</a></li>
+</ul>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Hotline]]></title>
+      <identifier><![CDATA[hotline]]></identifier>
+      <content><![CDATA[<div class="nav-top-links">
+<span class="first-item"><span class="fa fa-phone"><span class="hidden">hidden</span></span>00-62-658-658</span>
+<a href="{{store url=""}}contacts/"><span class="fa fa-envelope"><span class="hidden">hidden</span></span>Contact us today!</a></div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Support]]></title>
+      <identifier><![CDATA[support]]></identifier>
+      <content><![CDATA[<div class="support-link">
+                <a href="#">Services</a>
+                <a href="#">Support</a>
+            </div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Page Content Heading(Demo1)]]></title>
+      <identifier><![CDATA[heading]]></identifier>
+      <content><![CDATA[<div class="category-featured content_heading_fashion">{{widget type="megashop/widget_megashop" identifier="mega-shop-fashion" template="magiccart/megashop/megashop.phtml"}}</div>
+<div class="category-featured content_heading_sports">{{widget type="megashop/widget_megashop" identifier="mega-shop-sport" template="magiccart/megashop/megashop.phtml"}}</div>
+<div class="category-featured content_heading_electronics">{{widget type="megashop/widget_megashop" identifier="mega-shop-electronics" template="magiccart/megashop/megashop.phtml"}}</div>
+<div class="category-featured content_heading_digital">{{widget type="megashop/widget_megashop" identifier="mega-shop-digital" template="magiccart/megashop/megashop.phtml"}}</div>
+<div class="category-featured content_heading_furniture">{{widget type="megashop/widget_megashop" identifier="mega-shop-furniture" template="magiccart/megashop/megashop.phtml"}}</div>
+<div class="category-featured content_heading_jewelry">{{widget type="megashop/widget_megashop" identifier="mega-shop-jewelry" template="magiccart/megashop/megashop.phtml"}}</div>
+<div class="row banner-bottom">
+<div class="col-sm-6">
+<div class="banner-boder-zoom"><a href="#"><img class="img-responsive" alt="ads" src="{{media url="wysiwyg/alothemes/static/home1-17.jpg"}}" /></a></div>
+</div>
+<div class="col-sm-6">
+<div class="banner-boder-zoom"><a href="#"><img class="img-responsive" alt="ads" src="{{media url="wysiwyg/alothemes/static/home1-18.jpg"}}" /></a></div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Brand  Showcase And Hot categories]]></title>
+      <identifier><![CDATA[postblock_0]]></identifier>
+      <content><![CDATA[<div class="the-brands">{{widget type="shopbrand/widget_shopbrand" template="magiccart/shopbrand/shopbrand.phtml"}}</div>
+<div class="content-wrap">
+<div class="container">
+<div id="hot-categories" class="row">
+<div class="col-sm-12 group-title-box">
+<h2 class="group-title "><span>Hot categories</span></h2>
+</div>
+<div class="col-sm-6  col-lg-3 cate-box">
+<div class="cate-tit">
+<div class="div-1" style="width: 46%;">
+<div class="cate-name-wrap">
+<p class="cate-name">Electronics</p>
+</div>
+<a class="cate-link link-active" href="#"><span>shop now</span></a></div>
+<div class="div-2"><a href="#"> <img class="img-responsive hot-cate-img" alt="Electronics" src="{{media url="wysiwyg/alothemes/static/cate-product1.png"}}" /> </a></div>
+</div>
+<div class="cate-content">
+<ul>
+<li><a href="#">Batteries &amp; Chargers</a></li>
+<li><a href="#">Headphone, Headset</a></li>
+<li><a href="#">Home Audio</a></li>
+<li><a href="#">Mp3 Player Accessories</a></li>
+</ul>
+</div>
+</div>
+<!-- /.cate-box -->
+<div class="col-sm-6  col-lg-3 cate-box">
+<div class="cate-tit">
+<div class="div-1" style="width: 46%;">
+<div class="cate-name-wrap">
+<p class="cate-name">Sport &amp; Outdoors</p>
+</div>
+<a class="cate-link" href="#"><span>shop now</span></a></div>
+<div class="div-2"><a href="#"> <img class="img-responsive hot-cate-img" alt="Electronics" src="{{media url="wysiwyg/alothemes/static/cate-product2.png"}}" /> </a></div>
+</div>
+<div class="cate-content">
+<ul>
+<li><a href="#">Golf Supplies</a></li>
+<li><a href="#">Outdoor &amp; Traveling Supplies</a></li>
+<li><a href="#">Camping &amp; Hiking</a></li>
+<li><a href="#">Fishing</a></li>
+</ul>
+</div>
+</div>
+<!-- /.cate-box -->
+<div class="col-sm-6  col-lg-3 cate-box">
+<div class="cate-tit">
+<div class="div-1" style="width: 46%;">
+<div class="cate-name-wrap">
+<p class="cate-name">Fashion</p>
+</div>
+<a class="cate-link" href="#"><span>shop now</span></a></div>
+<div class="div-2"><a href="#"> <img class="img-responsive hot-cate-img" alt="Electronics" src="{{media url="wysiwyg/alothemes/static/cate-product3.png"}}" /> </a></div>
+</div>
+<div class="cate-content">
+<ul>
+<li><a href="#">Batteries &amp; Chargers</a></li>
+<li><a href="#">Headphone, Headset</a></li>
+<li><a href="#">Home Audio</a></li>
+<li><a href="#">Mp3 Player Accessories</a></li>
+</ul>
+</div>
+</div>
+<!-- /.cate-box -->
+<div class="col-sm-6  col-lg-3 cate-box">
+<div class="cate-tit">
+<div class="div-1" style="width: 46%;">
+<div class="cate-name-wrap">
+<p class="cate-name">Health &amp; Beauty</p>
+</div>
+<a class="cate-link" href="#"><span>shop now</span></a></div>
+<div class="div-2"><a href="#"> <img class="img-responsive hot-cate-img" alt="Electronics" src="{{media url="wysiwyg/alothemes/static/cate-product4.png"}}" /> </a></div>
+</div>
+<div class="cate-content">
+<ul>
+<li><a href="#">Bath &amp; Body</a></li>
+<li><a href="#">Shaving &amp; Hair Removal</a></li>
+<li><a href="#">Fragrances</a></li>
+<li><a href="#">Salon &amp; Spa Equipment</a></li>
+</ul>
+</div>
+</div>
+<!-- /.cate-box -->
+<div class="col-sm-6  col-lg-3 cate-box">
+<div class="cate-tit">
+<div class="div-1" style="width: 46%;">
+<div class="cate-name-wrap">
+<p class="cate-name">Jewelry &amp; Watches</p>
+</div>
+<a class="cate-link" href="#"><span>shop now</span></a></div>
+<div class="div-2"><a href="#"> <img class="img-responsive hot-cate-img" alt="Electronics" src="{{media url="wysiwyg/alothemes/static/cate-product5.png"}}" /> </a></div>
+</div>
+<div class="cate-content">
+<ul>
+<li><a href="#">Men Watches</a></li>
+<li><a href="#">Wedding Rings</a></li>
+<li><a href="#">Earring</a></li>
+<li><a href="#">Necklaces</a></li>
+</ul>
+</div>
+</div>
+<!-- /.cate-box -->
+<div class="col-sm-6  col-lg-3 cate-box">
+<div class="cate-tit">
+<div class="div-1" style="width: 46%;">
+<div class="cate-name-wrap">
+<p class="cate-name">Digital</p>
+</div>
+<a class="cate-link" href="#"><span>shop now</span></a></div>
+<div class="div-2"><a href="#"> <img class="img-responsive hot-cate-img" alt="Electronics" src="{{media url="wysiwyg/alothemes/static/cate-product6.png"}}" /> </a></div>
+</div>
+<div class="cate-content">
+<ul>
+<li><a href="#">Accessories for iPhone</a></li>
+<li><a href="#">Accessories for iPad</a></li>
+<li><a href="#">Accessories for Tablet PC</a></li>
+<li><a href="#">Tablet PC</a></li>
+</ul>
+</div>
+</div>
+<!-- /.cate-box -->
+<div class="col-sm-6  col-lg-3 cate-box">
+<div class="cate-tit">
+<div class="div-1" style="width: 46%;">
+<div class="cate-name-wrap">
+<p class="cate-name">Furniture</p>
+</div>
+<a class="cate-link" href="#"><span>shop now</span></a></div>
+<div class="div-2"><a href="#"> <img class="img-responsive hot-cate-img" alt="Electronics" src="{{media url="wysiwyg/alothemes/static/cate-product7.png"}}" /> </a></div>
+</div>
+<div class="cate-content">
+<ul>
+<li><a href="#">Batteries &amp; Chargers</a></li>
+<li><a href="#">Headphone, Headset</a></li>
+<li><a href="#">Home Audio</a></li>
+<li><a href="#">Mp3 Player Accessories</a></li>
+</ul>
+</div>
+</div>
+<!-- /.cate-box -->
+<div class="col-sm-6  col-lg-3 cate-box">
+<div class="cate-tit">
+<div class="div-1" style="width: 46%;">
+<div class="cate-name-wrap">
+<p class="cate-name">Toys &amp; Hobbies</p>
+</div>
+<a class="cate-link" href="#"><span>shop now</span></a></div>
+<div class="div-2"><a href="#"> <img class="img-responsive hot-cate-img" alt="Electronics" src="{{media url="wysiwyg/alothemes/static/cate-product8.png"}}" /> </a></div>
+</div>
+<div class="cate-content">
+<ul>
+<li><a href="#">Walkera</a></li>
+<li><a href="#">Fpv System &amp; Parts</a></li>
+<li><a href="#">RC Cars &amp; Parts</a></li>
+<li><a href="#">Helicopters &amp; Part</a></li>
+</ul>
+</div>
+</div>
+<!-- /.cate-box --></div>
+<!-- /#hot-categories --></div>
+<!-- /.container --></div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Latest Deals]]></title>
+      <identifier><![CDATA[latest_deals]]></identifier>
+      <content><![CDATA[<div>{{widget type="magicproduct/widget_magicproduct" identifier="latest_deals" template="magiccart/magicproduct/magicproduct_custom.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Left Module Categories]]></title>
+      <identifier><![CDATA[left-module]]></identifier>
+      <content><![CDATA[<div class="left-module-slide">{{widget type="magicslider/widget_slide" identifier="left-module-01" template="magiccart/magicslider/magicslider.phtml"}}</div>
+<div class="block left-module">{{widget type="magicproduct/widget_magicproduct" identifier="special-products" template="magiccart/magicproduct/magicproduct_custom.phtml"}}</div>
+<div class="left-tag">{{block type="tag/popular" name="tags_popular" template="tag/popular.phtml"}}</div>
+<div class="block block-testimonial">{{widget type="testimonial/widget_slide" template="magiccart/testimonial/slide.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Slide Category]]></title>
+      <identifier><![CDATA[slide-category]]></identifier>
+      <content><![CDATA[<div class="category-slider">{{widget type="magicslider/widget_slide" identifier="slide-category" template="magiccart/magicslider/magicslider.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Best Sale(Left Detail)]]></title>
+      <identifier><![CDATA[block_best]]></identifier>
+      <content><![CDATA[<div class="block left-module">{{widget type="magicproduct/widget_magicproduct" identifier="best-sale" template="magiccart/magicproduct/magicproduct_custom.phtml"}}
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Best image(Left Detail)]]></title>
+      <identifier><![CDATA[left-image]]></identifier>
+      <content><![CDATA[<!-- left image -->
+<div class="block col-left-image left-module">
+<div class="banner-opacity"> <img class="img-responsive hot-cate-img" alt="ads-banner" src="{{media url="wysiwyg/alothemes/static/icon-money.png"}}" />
+<h2>100% Money Back</h2>
+<h2>Guaranteed</h2>
+<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
+<a href="#">Read more <i class="fa fa-angle-double-right"><span class="hidden">facebook</span></i></a></div>
+</div>
+<!--./left image-->]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[On sale (Detail)]]></title>
+      <identifier><![CDATA[onsale]]></identifier>
+      <content><![CDATA[<div class="block left-module left-module-03">{{widget type="magicproduct/widget_magicproduct" identifier="on-sale" template="magiccart/magicproduct/magicproduct.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[block_map_contacts]]></title>
+      <identifier><![CDATA[block_map_contacts]]></identifier>
+      <content><![CDATA[<div class="map-conttact">
+    <h3 class="page-subheading">Information</h3>
+	<p>Lorem ipsum dolor sit amet onsectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor dapibus eget. Mauris tincidunt aliquam lectus sed vestibulum. Vestibulum bibendum suscipit mattis.</p>
+	<br/>
+	<ul>
+		<li>Praesent nec tincidunt turpis.</li>
+		<li>Aliquam et nisi risus.&nbsp;Cras ut varius ante.</li>
+		<li>Ut congue gravida dolor, vitae viverra dolor.</li>
+	</ul>
+	<br/>
+	<ul class="store_info">
+		<li><i class="fa fa-home"></i>Our business address is 1063 Freelon Street San Francisco, CA 95108</li>
+		<li><i class="fa fa-phone"></i><span>+ 021.343.7575</span></li>
+		<li><i class="fa fa-phone"></i><span>+ 020.566.6666</span></li>
+		<li><i class="fa fa-envelope"></i>Email: <span><a href="mailto:suport@alothemes.com">suport@alothemes.com</a></span></li>
+	</ul> 
+</div>	]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Banner Top Menu (Sports)]]></title>
+      <identifier><![CDATA[banner-top-menu]]></identifier>
+      <content><![CDATA[<div class="banner-top-menu"><img class="img-responsive" src="{{media url="wysiwyg/alothemes/static/banner-topmenu.jpg"}}" alt="" /></div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Menu Vertical Custom html]]></title>
+      <identifier><![CDATA[vertical-custom-html]]></identifier>
+      <content><![CDATA[<div class="mega-custom-html"><a href="#"><img alt="" src="{{media url="wysiwyg/alothemes/static/banner-megamenu.jpg"}}" /></a></div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[header-offer]]></title>
+      <identifier><![CDATA[header-offer]]></identifier>
+      <content><![CDATA[<div id="header-offer" class="top-banner">
+<div class="bg-overlay"><span class="hidden">overlay</span></div>
+<div class="container">
+<div class="promotion">
+<h2>Special Offer!</h2>
+<h3 class="des1">Additional 40% OFF For Men &amp; Women Clothings.</h3>
+<span class="des2">This offer is for online only 7PM to middnight ends in 30th July 2015</span> <span class="header-offer-close"><i class="fa fa-times"><span class="hidden">header-offer-close</span></i></span></div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[0]]></is_active>
+    </cms_block>
+  </blocks>
+</root>

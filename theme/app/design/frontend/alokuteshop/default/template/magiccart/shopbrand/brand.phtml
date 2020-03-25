@@ -1,0 +1,41 @@
+<?php 
+if(!$this->config['enabled']) return;
+$title = isset($this->config['title']) ? $this->config['title'] : '';
+$selector = 'slider'.md5(rand()); //rand(0,666666);
+$brands = $this->getBrand(); if(!count($brands)) return;
+$_rowCount 	= isset($this->config['rows']) ? $this->config['rows'] : 1;
+$tag = ($_rowCount >1) ? 'div' : 'ul';
+$_collectionSize = count($brands);
+?>
+<div id="<?php echo $selector ?>">
+    <?php echo $title ? '<h2 class="title item">' . '<span>' .$title. '</span>' . '</h2>' : '' ?>
+    <<?php echo $tag ?> class="shopbrand">
+    <?php $i=0; foreach ($brands as $brand) :?>
+		<?php if ($_rowCount > 1 && $i++%$_rowCount==0): ?>
+			<ul class="products-grid-rows">
+		<?php endif ?>
+			<li class="item">
+				<a href="<?php echo $brand->getUrlkey() ? $this->getUrl() . $brand->getUrlkey() : '#' ?>">
+					<img class="brand img-responsive" src="<?php echo $this->getImage($brand)?>" alt="<?php echo $this->__($brand->getTitle()) ?>" title="<?php echo $this->__($brand->getTitle()) ?>" />
+				</a>
+			</li>
+		<?php if ($_rowCount > 1 && $i%$_rowCount==0 || $i==$_collectionSize): ?>
+			</ul>
+		<?php endif ?>
+    <?php endforeach ?>
+    </<?php echo $tag; ?>>
+</div>
+
+<script type="text/javascript">
+    jQuery( document ).ready(function($) {
+        (function(selector){
+            var $content = $(selector);
+            var $slider  = $('.shopbrand', $content);
+            $slider.bxSlider({
+                <?php echo $this->getBrandSlider() ?>
+            });
+
+        })("#<?php echo $selector ?>");
+    });
+</script>
+

@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<root>
+  <pages>
+    <cms_block>
+      <title><![CDATA[Kute Shop Demo6]]></title>
+      <root_template><![CDATA[one_column]]></root_template>
+      <identifier><![CDATA[kute-shop-demo6]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div class="row">
+<div class="col-sm-8 header-top-right">
+<div class="homeslider">{{widget type="magicslider/widget_slide" identifier="home_06" template="magiccart/magicslider/magicslider.phtml"}}</div>
+</div>
+<div class="col-sm-2 group-banner-slider group-banner-slider1" style="padding-left: 2px;">
+<div class="item banner-opacity"><a href="#"><img class="hot-img" alt="Banner" src="{{media url="wysiwyg/alothemes/static/banner9.jpg"}}" /></a></div>
+<div class="item banner-opacity"><a href="#"><img class="hot-img" alt="Banner" src="{{media url="wysiwyg/alothemes/static/banner10.jpg"}}" /></a></div>
+<div class="banner-opacity"><a href="#"><img class="hot-img" alt="Banner" src="{{media url="wysiwyg/alothemes/static/banner11.jpg"}}" /></a></div>
+</div>
+<div class="col-sm-2 group-banner-slider group-banner-slider2">
+<div class=" item policy">
+<h5 class="title">policy</h5>
+<ul>
+<li><a href="#"> <img class="icon1" alt="Icon" src="{{media url="wysiwyg/alothemes/static/safe1.png"}}" /> <img class="icon2" alt="Icon" src="{{media url="wysiwyg/alothemes/static/safe2.png"}}" /> Safe Payment </a></li>
+<li><a href="#"> <img class="icon1" alt="Icon" src="{{media url="wysiwyg/alothemes/static/icon2.png"}}" /> <img class="icon2" alt="Icon" src="{{media url="wysiwyg/alothemes/static/icon2-1.png"}}" /> Worldwide Delivery</a></li>
+<li><a href="#"> <img class="icon1" alt="Icon" src="{{media url="wysiwyg/alothemes/static/icon3.png"}}" /> <img class="icon2" alt="Icon" src="{{media url="wysiwyg/alothemes/static/icon3-1.png"}}" /> Change Pay</a></li>
+<li><a href="#"> <img class="icon1" alt="Icon" src="{{media url="wysiwyg/alothemes/static/icon4.png"}}" /> <img class="icon2" alt="Icon" src="{{media url="wysiwyg/alothemes/static/icon4-1.png"}}" /> Customer Service</a></li>
+<li><a href="#"> <img class="icon1" alt="Icon" src="{{media url="wysiwyg/alothemes/static/icon5.png"}}" /> <img class="icon2" alt="Icon" src="{{media url="wysiwyg/alothemes/static/icon5-1.png"}}" /> Sales Of Prestige</a></li>
+</ul>
+</div>
+<div class="item banner-opacity"><a href="#"><img class="hot-img" alt="Banner" src="{{media url="wysiwyg/alothemes/static/banner12.jpg"}}" /></a></div>
+<div class="banner-opacity"><a href="#"><img class="hot-img" alt="Banner" src="{{media url="wysiwyg/alothemes/static/banner13.jpg"}}" /></a></div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4">
+<div class="block-popular-cat">
+<div class="parent-categories">Health &amp; Beauty</div>
+<div class="block-popular-inner">
+<div class="image banner-boder-zoom2"><a href="#"><img class="hot-img" alt="popular" src="{{media url="wysiwyg/alothemes/static/popular1.jpg"}}" /></a></div>
+<div class="sub-categories">
+<ul>
+<li><a href="#">Eye Shadow</a></li>
+<li><a href="#">Eyes Care</a></li>
+<li><a href="#">Lipstick</a></li>
+<li><a href="#">Face Color</a></li>
+<li><a href="#">Nails</a></li>
+</ul>
+<a class="more" href="#">More</a></div>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="block-popular-cat">
+<div class="parent-categories">Shoes &amp; Accessories</div>
+<div class="block-popular-inner">
+<div class="image banner-boder-zoom2"><a href="#"><img class="hot-img" alt="popular" src="{{media url="wysiwyg/alothemes/static/popular2.jpg"}}" /></a></div>
+<div class="sub-categories">
+<ul>
+<li><a href="#">Shoes</a></li>
+<li><a href="#">Leather Bags</a></li>
+<li><a href="#">Tops</a></li>
+<li><a href="#">Bottoms</a></li>
+<li><a href="#">Glasses</a></li>
+</ul>
+<a class="more" href="#">More</a></div>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="block-popular-cat">
+<div class="parent-categories">Jewellry &amp; Watches</div>
+<div class="block-popular-inner">
+<div class="image banner-boder-zoom2"><a href="#"><img class="hot-img" alt="popular" src="{{media url="wysiwyg/alothemes/static/popular3.jpg"}}" /></a></div>
+<div class="sub-categories">
+<ul>
+<li><a href="#">Golden Necklace</a></li>
+<li><a href="#">Earrings</a></li>
+<li><a href="#">Diamond Ring</a></li>
+<li><a href="#">Rings</a></li>
+<li><a href="#">Watches</a></li>
+</ul>
+<a class="more" href="#">More</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row banner-bottom">
+<div class="col-sm-6 item-left">
+<div class="banner-boder-zoom"><a href="#"><img class="img-responsive" alt="Banner" src="{{media url="wysiwyg/alothemes/static/demo5/banner1.jpg"}}" /></a></div>
+</div>
+<div class="col-sm-6 item-right">
+<div class="banner-boder-zoom"><a href="#"><img class="img-responsive" alt="Banner" src="{{media url="wysiwyg/alothemes/static/demo5/banner2.jpg"}}" /></a></div>
+</div>
+</div>]]></content>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+  </pages>
+</root>

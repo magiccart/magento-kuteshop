@@ -1,0 +1,155 @@
+<?php
+/**
+ * Magiccart 
+ * @category 	Magiccart 
+ * @copyright 	Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license 	http://www.magiccart.net/license-agreement.html
+ * @Author: Magiccart<team.magiccart@gmail.com>
+ * @@Create Date: 2014-05-08 22:57:12
+ * @@Modify Date: 2015-08-26 16:20:26
+ * @@Function:
+ */
+ ?>
+<?php if(!$this->getGeneralCfg('enabled')) return; ?>
+<?php if($this->getStatus() == 2) return; ?>
+<?php $selector = $this->generateRandomString(); //md5(rand()); //rand(0,666666); ?>
+
+<div class= "<?php echo $selector?> magiccategory">
+<div class="row">
+<?php
+$tabs = $this->getTabs();
+$ajax = json_encode($this->getProductCfg());
+$images = $this->getImages();
+$width  = 227;
+$height = 348;
+$idHtml = $this->generateRandomString();
+?>
+<?php if(count($tabs)): ?>
+    <div class="col-sm-12 col-md-12 col-lg-4">
+		<div class="magic-category">
+			<div class="block-title-tabs clearfix">
+			<?php echo $this->getTitle() ?  '<div class="hot-deals-title vertical-text"><h3 class="title">'.$this->__($this->getTitle()).'</h3></div>' : ''; ?>
+				<div class="hot-deals-tab-box">
+					<ul class="magictabs" data-ajax ='<?php echo $ajax ?>'>
+						<?php $active = $this->getTabActive();
+							$limit = $this->getNumProduct();
+							foreach ($tabs as $id => $name):
+								$status = ($id == $active) ? 'active loaded' : '';
+								echo '<li class="item '.$status.'" data-type ="'.$id.'"><span class ="title">'.$this->__($name).'</span></li>';
+							endforeach;
+						?>
+					</ul>
+					<?php
+					$toDate = $this->getData('countdown');
+					if($toDate):
+					?>
+						<div class="count-down-time">
+							<div id="countbox_<?php echo $this->getIdentifier(); ?>" class="timer-view"></div>
+						</div>
+						<script type="text/javascript">
+							(function (){
+								var dthen = new Date("<?php echo Date("m/d/y", strtotime($toDate)).' 11:59:00 PM'; ?>");
+								var start_date = Date.parse(startMcTimer);
+								var dnow = new Date(start_date);
+								if(CountStepper>0) ddiff= new Date((dnow)-(dthen));
+								else ddiff = new Date((dthen)-(dnow));
+								var gsecs = Math.floor(ddiff.valueOf()/1000);
+								var iid = "countbox_<?php echo $this->getIdentifier(); ?>";
+								CountBack(gsecs,iid, mcTimer);
+								mcTimer++;
+							})();
+						</script>
+					<?php endif ?>
+				</div>
+			</div>
+		</div>
+	</div>
+<?php endif ?>
+	<div class="ajax_loading" style="display:none" data-url="<?php echo $this->getUrl('magiccategory/index/ajax', array('_type' => 'direct_link'))?>">
+		<img src="<?php echo $this->getSkinUrl('magiccart/plugin/images/loading.gif')?>" alt="<?php echo $this->__('Loading...');?>"/>
+	</div>
+   <div class="col-sm-12 col-md-12 col-lg-8 hot-deals-tab-content-col">
+		<div class="box-product-content clearfix">
+			<?php $numImage = count($images);?>
+			<?php if(isset($images) && !empty($images) && $numImage>0) : ?>
+				<div class="box-product-adv">
+					<div class="promotion">
+						<div id="<?php echo $idHtml ?>">
+						<?php $start = 'play start' ?>
+						<?php foreach($images as $image): ?>
+							<div class="item">
+								<a  href="<?php echo ( isset($image['link']) && $image['link'] ) ? ($image['link']) : '#'; ?>">
+									<img src="<?php echo $this->helper('magiccategory')->resizeImg($image['file']);?>" alt="<?php echo $image['label'] ? $image['label'] : 'promotions' ?>">
+								</a>
+								<?php if(isset($image['html']) && $image['html']) : ?>
+									<div class="bx-caption <?= $start ?>">
+										<?php echo $image['html'] ?>
+									</div>
+								<?php endif ?>
+							</div>
+							<?php $start = '' ?>
+						<?php endforeach;?>
+						</div>
+					</div>
+				</div>	
+				<?php if($numImage >1): ?>
+					<script type="text/javascript">
+						jQuery(document).ready(function($){
+							$('#<?php echo $idHtml ?>').bxSlider({
+								auto: false,
+								captions: true,
+								<?php //echo $this->getBxslider() ?>
+								onSlideBefore: function(el) {
+									el.siblings().find('.bx-caption').removeClass('play');
+									el.find('.bx-caption').addClass('play').addClass('start');				
+								},
+							});
+						});
+					</script>
+				<?php endif ?>
+			<?php endif;?>
+			<?php 
+				$margin  = (int) $this->getData('marginColumn');
+				$slide   = json_encode($this->setFlexiselArray());
+				$options = json_encode($this->getItemsDevice());
+			?>
+			<div class="box-product">
+				<div class="content-products" data-margin="<?php echo $margin ?>" data-slider='<?php echo $slide ?>' data-options='<?php echo $options; ?>'>
+					<?php echo $this->getContentActive('magiccart/magiccategory/product/grid.phtml');?>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	</div>
+	<!-- MAP -->
+	<?php echo $this->getChildHtml('product.tooltip');?>
+	<!-- MAP -->
+</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function ($) {
+	jQuery(".<?php echo $selector?>").magicproduct({
+		selector : ".<?php echo $selector?>", // Selector product grid
+	});
+// 	var slider = $(".content-products .flexisel-content").bxSlider({
+// 	moveSlides: 2,
+// 	infiniteLoop:false,
+// 	maxSlides:'4',
+// 	// "slideWidth":"140",
+// 	mode:'vertical',
+// 	minSlides:2,	
+
+// 	// //minSlides: 2,
+// 	// maxSlides: 4,
+// 	// infiniteLoop: false,
+// 	// minSlides: 3,
+// 	// moveSlides: 2,
+// 	// mode: 'vertical',
+// 	// slideMargin: 10,
+
+
+// });
+});
+</script>
+

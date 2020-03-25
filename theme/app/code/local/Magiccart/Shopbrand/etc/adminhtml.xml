@@ -1,0 +1,58 @@
+<?xml version="1.0"?> 
+<!-- /**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: Magiccart <team.magiccart@gmail.com>
+ * @@Create Date: 2014-03-15 23:15:05
+ * @@Modify Date: 2015-12-31 17:20:28
+ * @@Function:
+ */ -->
+<config>
+	<menu>
+		<magiccart module="shopbrand">				               
+			<children>					
+        		<shopbrand translate="title" module="shopbrand">
+					<title>Shop Brand</title>
+					<sort_order>500</sort_order>
+					<action>adminhtml/adminhtml_brand</action>
+	    		</shopbrand>                
+			</children>
+		</magiccart>
+	</menu>
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+                    <magiccart translate="title" module="shopbrand">
+                        <title>Magiccart</title>
+                        <sort_order>89</sort_order>               
+                        <children>
+                            <shopbrand translate="title" module="shopbrand">
+                                <title>Shop Brand</title>
+                                <sort_order>90</sort_order>
+                            </shopbrand>
+                        </children>
+                    </magiccart>   
+					<system>
+						<children>
+							<config>
+								<children>
+									<shopbrand translate="title">
+										<title>Shop Brand</title>
+										<sort_order>56</sort_order>
+									</shopbrand>                               
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>
+

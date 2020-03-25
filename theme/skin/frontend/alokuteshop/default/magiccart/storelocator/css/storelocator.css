@@ -1,0 +1,185 @@
+#sidebar {  
+    /* css3 drop shadow */
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+    /* css3 border radius */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    /* width:345px; height: 423px; padding:10px; font-size: 11px; color: #000; margin: 20px 0 0 20px; */
+    width:380px; height: 445px; padding:10px; font-size: 11px; color: #000; margin: 20px 0 0 20px;
+    background:#fff;
+    position:absolute; 
+    z-index:1; 
+    display:none;
+}
+#sidebar a { cursor:pointer; margin-bottom:5px; background-color:#fff; display:inline; }
+#sidebar a:hover { background-color:#eee; }
+#storelocator-container { width:100%; font-family:Arial, sans-serif; font-size:11px; background:white; }
+#map { overflow: hidden; width:100%; height:480px; }
+#cuahang { overflow: auto; margin:10px; font-size: 11px; color: #000; clear: both; padding: 0;}
+#sidebar .cuahang  h1{     color: #333333;
+    font-family: PillGothic300mgRegular;
+    font-size: 18px;
+    letter-spacing:1px;
+    text-transform: uppercase;
+	}
+#chitiet { bottom: 0px;
+    clear: both;
+    color: #000000;
+    font-size: 11px;
+    height: 155px;
+    margin: 8px;
+    overflow: auto;
+    position: absolute;
+    width: 340px;}
+#chitiet img {height: 155px; width 100%;}
+#sidebar input, select {
+    border: 1px solid #BCBCBC;
+    height: 25px;padding: 0;
+}
+#sidebar .search-select select {
+    border-radius: 3px 3px 3px 3px;
+    margin: 0 10px 0;
+    padding: 5px;
+    width: 94%;
+	height: 30px; font-size: 12px;
+}
+#sidebar input.input-text:focus, select:focus, textarea:focus{background:#ffffff;}
+#cuahang li {
+    color: #787878;
+    cursor: pointer;
+    font-family: PillGothic300mgLight;
+    font-size: 18px;text-overflow: ellipsis;
+	list-style: none outside none;line-height: 26px;
+}
+#cuahang > li:hover{color:#000;}
+#sidebar fieldset {padding: 10px 0 10px 10px;}
+#country option {
+    color: #787878;
+}
+#sidebar h1 {
+    color: #333333;
+    font-family: PillGothic300mgRegular;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#cuahang h3 {
+    font-family: PillGothic300mgRegular;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.sidebar_bottom {
+    overflow: hidden;
+    position: relative;
+}
+.search-autostore {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #AAAAAA;
+    border-radius: 3px 3px 3px 3px;
+    position: absolute;
+    width: 87%;
+}
+#search_autostore > ul li {
+    cursor: pointer;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 11px;
+}
+#search_autostore > ul li:hover{ background: none repeat scroll 0 0 #EFEFEF;}
+
+#sidebar #storesearch {
+    background: url("../images/icons_figures.png") no-repeat scroll center -625px transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    position: absolute;
+    right: -13px;
+    text-indent: -999em;
+    top: 0;
+    width: 40px;
+}
+#sidebar .search-box .input-text {
+    border-radius: 3px 3px 3px 3px;
+    height: 28px;
+    width: 104.5%;
+}
+
+#sidebar h1 {
+    color: #333333;
+    font-family: PillGothic300mgRegular;
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+}
+
+#cuahang pre, p {
+    color: #787878;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 18px;    
+}
+
+.block-countries {
+    border-top: 1px solid #D5D5D5;
+    margin: 40px 0;
+}
+
+.block-countries h2 {
+    margin: 20px 0;
+
+    color: #333333;
+    font-family: PillGothic300mgRegular;
+    font-size: 28px;
+    letter-spacing: 0.1rem;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+}
+
+.countries-lister.clearfix li{
+    float: left;
+    height: 175px;
+    margin: 0 20px 20px 0;
+    max-width: 220px;
+}
+.countries-lister.clearfix {
+    padding: 0;
+}
+.countries-lister h3 {
+    font-family: PillGothic300mgLight;
+    /*font-size: 1.8rem;*/
+    font-weight: normal;
+    line-height: 2.8rem;
+    margin: 10px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.search-box {
+    margin-top: 10px;max-width: 322px;display: block;position: relative; width: 100%;
+}
+#cuahang li.backto {
+    font-family: arial;
+    font-size: 12px;margin-bottom: 20px;
+}
+/* style for ie8 ======================================================================================= */
+.ie8 #sidebar #storesearch { margin-top: 2px;}
+
+/* ======================================================================================= */
+.other_country a {
+    text-decoration: none;
+}
+.other_country img {
+    width: 100%;
+} 
+.opening-hours {
+    border-top: 1px solid #D5D5D5;
+    margin: 40px 0;
+}
+

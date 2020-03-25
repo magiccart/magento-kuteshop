@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: Magiccart<team.magiccart@gmail.com>
+ * @@Create Date: 2014-07-15 19:01:41
+ * @@Modify Date: 2015-12-16 21:52:01
+ * @@Function:
+ */ 
+-->
+<config>
+<!--     <menu>
+        <magiccart>
+            <title>Magiccart</title>
+            <sort_order>89</sort_order>
+            <children>
+                <magicsocial module="magicsocial">
+                    <title>Magic Social</title>
+                    <sort_order>80</sort_order>
+                    <action>adminhtml/system_config/edit/section/magicsocial</action>
+                </magicsocial>
+            </children> 
+        </magiccart>
+    </menu> -->
+    <acl>
+        <resources>
+            <admin>
+                <children>     
+                    <magiccart translate="title" module="magicsocial">
+                        <title>Magiccart</title>
+                        <sort_order>89</sort_order>               
+                        <children>
+                            <magicsocial translate="title" module="magicsocial">
+                                <title>Magic Social</title>
+                                <sort_order>80</sort_order>
+                            </magicsocial>
+                        </children>
+                    </magiccart>   
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <magicsocial>
+                                        <title>Magic Social</title>
+                                    </magicsocial>
+                                </children>
+                            </config>
+                        </children>
+                    </system>                 
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
+

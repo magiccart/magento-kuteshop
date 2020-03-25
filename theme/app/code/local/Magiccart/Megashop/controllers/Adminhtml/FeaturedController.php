@@ -1,0 +1,101 @@
+<?php
+/**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: DOng NGuyen<nguyen@dvn.com>
+ * @@Create Date: 2014-03-14 20:26:27
+ * @@Modify Date: 2015-12-16 21:57:33
+ * @@Function:
+ */
+?>
+<?php
+class Magiccart_Megashop_Adminhtml_FeaturedController extends Mage_Adminhtml_Controller_Action
+{
+	
+	protected function _initProduct()
+    {
+        
+        $product = Mage::getModel('catalog/product')
+            ->setStoreId($this->getRequest()->getParam('store', 0));
+
+    	
+            if ($setId = (int) $this->getRequest()->getParam('set')) {
+                $product->setAttributeSetId($setId);
+            }
+
+            if ($typeId = $this->getRequest()->getParam('type')) {
+                $product->setTypeId($typeId);
+            }
+                    
+        $product->setData('_edit_mode', true);
+        
+        Mage::register('product', $product);
+       
+        return $product;
+    }
+
+	
+	public function indexAction()
+	{
+        $this->_initProduct();
+        
+		$this->loadLayout()->_setActiveMenu('megashop/featuredproduct');
+			
+		$this->_addContent($this->getLayout()->createBlock('megashop/adminhtml_edit'));
+        
+        $this->renderLayout();
+	
+	}
+	
+	public function gridAction()
+	{
+		 
+	$this->getResponse()->setBody(
+            $this->getLayout()->createBlock('megashop/adminhtml_edit_grid')->toHtml()
+        );
+	
+	}
+	
+	public function saveAction()
+	{
+		$data = $this->getRequest()->getPost(); 
+		$storeId    = $this->getRequest()->getParam('store', 0);
+		$featured   = Magiccart_Megashop_Helper_Data::FEATURED;
+        $collection = Mage::getModel('catalog/product')->getCollection();
+
+        parse_str($data['featured_products'], $featured_products);
+		
+        $collection->addIdFilter(array_keys($featured_products));
+        
+		 try {
+		 	
+			foreach($collection->getItems() as $product)
+			{
+				
+				$product->setData($featured, $featured_products[$product->getEntityId()]);
+				$product->setStoreId($storeId);		
+		  		$product->save();	
+			} 	
+		 	
+			
+		 	$this->_getSession()->addSuccess($this->__('Featured product was successfully saved.'));
+			$this->_redirect('*/*/index', array('store'=> $this->getRequest()->getParam('store')));	
+		 	
+		 }catch (Exception $e){
+			$this->_getSession()->addError($e->getMessage());
+			$this->_redirect('*/*/index', array('store'=> $this->getRequest()->getParam('store')));
+		 }
+	
+	}
+	
+	protected function _validateSecretKey()
+	{
+		return true;
+	}
+
+	protected function _isAllowed() {	return true;	}
+	
+}
+

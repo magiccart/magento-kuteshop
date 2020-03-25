@@ -1,0 +1,86 @@
+.magicslider{padding:0px;margin:0;}
+.bx-wrapper .bx-caption {
+    display:none;
+}
+.bx-wrapper .bx-caption.start, .bx-wrapper .bx-caption.play {
+    display:block;
+}
+.play .caption1 {
+    position:absolute;
+    top: 68%;
+    left: 172px; 
+    z-index:30;
+    color: #f96d10;font-size: 28px;font-weight:bold;line-height: 28px;text-transform: uppercase;letter-spacing: 9px;
+    -moz-animation: fadeInRight 0.8s ease-in 1.3s backwards;
+    -webkit-animation: fadeInRight 0.8s ease-in 1s backwards;
+    animation: fadeInRight 0.8s ease-in 1s backwards;
+    opacity: 1;
+}
+.play .caption2 {
+    position:absolute;
+    top:76%;
+    left: 100px;
+    z-index:40;
+    color: #333333;font-size: 47px;margin: 0;line-height: 47px;font-weight: bold;
+    text-transform: uppercase;
+    -moz-animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+    -webkit-animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+    animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+    opacity:1;
+}
+.play .caption3 {
+     position:absolute;
+    top:87%;
+    left: 100px;
+    z-index:50;
+   color: #333333;font-size: 20px;margin: 0;line-height: 20px;font-weight: normal;
+    letter-spacing: 10px;
+    -moz-animation: fadeInUp 0.8s ease-in 1.7s backwards;
+    -webkit-animation: fadeInUp 0.8s ease-in 1.7s backwards;
+    animation: fadeInUp 0.8s ease-in 1.7s backwards;
+    opacity:1;
+}
+.play .caption2,.play .caption3,.play .caption1{font-family: "Arial",sans-serif;}
+.play .caption4 {
+    -moz-animation: fadeInLeft 1s ease-in 2s backwards;
+    -webkit-animation: fadeInLeft 1sease-in 2s backwards;
+    animation: fadeInLeft 1 sease-in 2s backwards;
+    position:absolute;
+    bottom:80px;
+    z-index:60;
+    opacity:1;
+}
+.play .text-slide3 .caption4{bottom: 160px;}
+.btn-shop {border: 2px solid #955251;color: #955251;display: inline-block;font-size: 17px;font-weight: 400;line-height: 45px;margin-top: 35px;padding: 0 40px;text-transform: uppercase;}
+.btn-shop:hover {color: #fff;background-color: #955251;}
+.play .text-slide3 .caption4 .btn-shop,
+.play .text-slide2 .caption4 .btn-shop{border: 2px solid #242628;color: #242628;}
+.play .text-slide3 .caption4 .btn-shop:hover,
+.play .text-slide2 .caption4 .btn-shop:hover{color: #fff;background-color: #242628;}
+.play .text-slide2 .caption1{
+    position:absolute;
+     top: 25%; 
+    z-index:30;
+    color: #88898c;
+    font-size: 200px;
+    font-weight:100;
+    line-height: 190px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+.play .text-slide2 .caption2,.play .text-slide2 .caption1{left: 0;right: 0;text-align: center;}
+.play .text-slide2 .caption1{letter-spacing: 0;}
+.magicslider .bx-wrapper .bx-controls-direction a{top: 50%;}
+.magicslider .bx-controls-direction .bx-prev, 
+.magicslider .bx-controls-direction .bx-next {width: 32px;height: 32px;line-height: 32px;text-align: center;-moz-transition: all 0.45s ease;-webkit-transition: all 0.45s ease;-o-transition: all 0.45s ease;-ms-transition: all 0.45s ease;transition: all 0.45s ease;position: absolute;visibility: hidden;opacity: 0;}
+.magicslider .bx-wrapper .bx-controls-direction a.bx-prev{left: 50%;}
+.magicslider .bx-wrapper .bx-controls-direction a.bx-next{right: 50%;}
+.magicslider:hover .bx-wrapper .bx-controls-direction .bx-next{right: 0;visibility: inherit;opacity: 1;}
+.magicslider:hover .bx-wrapper .bx-controls-direction .bx-prev{left: 0;visibility: inherit;opacity: 1;}
+.magicslider .bx-prev{-ms-transform: translateY(-50%); -webkit-transform: translateY(-50%);transform: translateY(-50%);}
+.magicslider .bx-next{-ms-transform: translateY(-50%);-webkit-transform: translateY(-50%);transform: translateY(-50%);}
+.magicslider .bx-wrapper .bx-pager{bottom: 10px;width: 100%;}
+.magicslider .bx-wrapper .bx-pager .bx-pager-item {margin-right: 5px;margin-left: 0;}
+.magicslider .bx-wrapper .bx-pager.bx-default-pager a{width: 10px;height: 10px;line-height: 10px;margin:0 ;text-align: center;border: 1px solid #fff;background-color: #fff;font-family: Arial;font-size: 12px;}
+.magicslider .bx-wrapper .bx-pager .bx-pager-item a:hover, .magicslider .bx-wrapper .bx-pager .bx-pager-item a.active {background-color: #e62e04;border: 1px solid #e62e04;color: #ffffff;}
+

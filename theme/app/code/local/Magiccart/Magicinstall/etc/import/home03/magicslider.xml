@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<root>
+  <magicslider>
+    <slide>
+      <title><![CDATA[Slide Home]]></title>
+      <identifier><![CDATA[home_1]]></identifier>
+      <content><![CDATA[[{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/s\/l\/slide1.jpg","file":"\/s\/l\/slide1.jpg","label":"Aloshop","position":"1","disabled":0,"removed":0,"html":"<!--<div class=\"container\">\n<div class=\"text-slide\">\n<h3 class=\"caption1\">new<\/h3>\n<h3 class=\"caption2\">fashion<\/h3>\n<h3 class=\"caption3\"><strong>&<\/strong>style<\/h3>\n<\/div>\n<\/div>-->","link":""},{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/s\/l\/slide3_2.jpg","file":"\/s\/l\/slide3_2.jpg","label":"","position":"3","disabled":0,"removed":0,"html":"<!--<div class=\"container\">\n<div class=\"text-slide text-slide2\">\n<h3 class=\"caption1\">spring<\/h3>\n<h3 class=\"caption2\">collection<\/h3>\n<\/div>\n<\/div>-->","link":""},{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/s\/l\/slide2_1.jpg","file":"\/s\/l\/slide2_1.jpg","label":"","position":"2","disabled":0,"removed":0,"html":"<!--<div class=\"container\">\n<div class=\"text-slide text-slide2\">\n<h3 class=\"caption1\">Lookbook<\/h3>\n<h3 class=\"caption2\">real man<\/h3>\n<\/div>\n<\/div>-->","link":""}]]]></content>
+      <status><![CDATA[1]]></status>
+      <config><![CDATA[a:6:{s:5:"width";s:3:"666";s:6:"height";s:3:"450";s:8:"controls";s:1:"1";s:5:"pager";s:1:"1";s:5:"pause";s:4:"6000";s:5:"speed";s:3:"800";}]]></config>
+    </slide>
+    <slide>
+      <title><![CDATA[Slide Home 2]]></title>
+      <identifier><![CDATA[home_2]]></identifier>
+      <content><![CDATA[[{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/0\/2\/02_homev2_01.jpg","file":"\/0\/2\/02_homev2_01.jpg","label":"","position":"1","disabled":0,"removed":0,"html":"<div class=\"container-normal\">\n<div class=\"text-slide\">\n<h3 class=\"caption1\">Sunblock<\/h3>\n<h3 class=\"caption2\">healthy skin<\/h3>\n<h3 class=\"caption3\">even under the sun<\/h3>\n<\/div>\n<\/div>","link":""},{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/0\/2\/02_homev2_02.jpg","file":"\/0\/2\/02_homev2_02.jpg","label":"","position":"2","disabled":0,"removed":0,"html":"<div class=\"container-normal\">\n<div class=\"text-slide\">\n<h3 class=\"caption1\">Sunblock<\/h3>\n<h3 class=\"caption2\">healthy skin<\/h3>\n<h3 class=\"caption3\">even under the sun<\/h3>\n<\/div>\n<\/div>","link":""},{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/s\/l\/slide-demo2.jpg","file":"\/s\/l\/slide-demo2.jpg","label":"","position":"3","disabled":0,"removed":0,"html":"<div class=\"container-normal\">\n<div class=\"text-slide\">\n<h3 class=\"caption1\">Sunblock<\/h3>\n<h3 class=\"caption2\">healthy skin<\/h3>\n<h3 class=\"caption3\">even under the sun<\/h3>\n<\/div>\n<\/div>","link":""}]]]></content>
+      <status><![CDATA[1]]></status>
+      <config><![CDATA[a:6:{s:5:"width";s:3:"900";s:6:"height";s:3:"450";s:8:"controls";s:1:"1";s:5:"pager";s:1:"1";s:5:"pause";s:4:"6000";s:5:"speed";s:3:"800";}]]></config>
+    </slide>
+    <slide>
+      <title><![CDATA[Slide Home 4]]></title>
+      <identifier><![CDATA[home_4]]></identifier>
+      <content><![CDATA[[{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/0\/4\/04_homev4_03.jpg","file":"\/0\/4\/04_homev4_03.jpg","label":"","position":"3","disabled":0,"removed":0,"html":"","link":""},{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/0\/4\/04_homev4_02.jpg","file":"\/0\/4\/04_homev4_02.jpg","label":"","position":"2","disabled":0,"removed":0,"html":"","link":""},{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/0\/4\/04_homev4_01.jpg","file":"\/0\/4\/04_homev4_01.jpg","label":"","position":"1","disabled":0,"removed":0,"html":"","link":""}]]]></content>
+      <status><![CDATA[1]]></status>
+      <config><![CDATA[a:6:{s:5:"width";s:3:"890";s:6:"height";s:3:"470";s:8:"controls";s:1:"1";s:5:"pager";s:1:"1";s:5:"pause";s:4:"6000";s:5:"speed";s:3:"800";}]]></config>
+    </slide>
+    <slide>
+      <title><![CDATA[Slide Home 5]]></title>
+      <identifier><![CDATA[home_05]]></identifier>
+      <content><![CDATA[[{"url":"http:\/\/192.168.5.101\/alo_kuteshop\/media\/magiccart\/magicslider\/\/h\/o\/home-slidev5_03.jpg","file":"\/h\/o\/home-slidev5_03.jpg","label":"","position":"3","disabled":0,"removed":0,"html":"\n","link":""},{"url":"http:\/\/192.168.5.101\/alo_kuteshop\/media\/magiccart\/magicslider\/\/h\/o\/home-slidev5_02.jpg","file":"\/h\/o\/home-slidev5_02.jpg","label":"","position":"2","disabled":0,"removed":0,"html":"","link":""},{"url":"http:\/\/192.168.5.101\/alo_kuteshop\/media\/magiccart\/magicslider\/\/h\/o\/home-slidev5_01.jpg","file":"\/h\/o\/home-slidev5_01.jpg","label":"","position":"1","disabled":0,"removed":0,"html":"","link":""}]]]></content>
+      <status><![CDATA[1]]></status>
+      <config><![CDATA[a:6:{s:5:"width";s:4:"1170";s:6:"height";s:3:"451";s:8:"controls";s:1:"1";s:5:"pager";s:1:"1";s:5:"pause";s:4:"6000";s:5:"speed";s:3:"800";}]]></config>
+    </slide>
+    <slide>
+      <title><![CDATA[Slide Home 6]]></title>
+      <identifier><![CDATA[home_06]]></identifier>
+      <content><![CDATA[[{"url":"http:\/\/192.168.5.101\/alo_kuteshop\/media\/magiccart\/magicslider\/\/h\/o\/home-slidev6_01.jpg","file":"\/h\/o\/home-slidev6_01.jpg","label":"","position":"1","disabled":0,"removed":0,"html":"","link":""},{"url":"http:\/\/192.168.5.101\/alo_kuteshop\/media\/magiccart\/magicslider\/\/h\/o\/home-slidev6_02.jpg","file":"\/h\/o\/home-slidev6_02.jpg","label":"","position":"2","disabled":0,"removed":0,"html":"","link":""},{"url":"http:\/\/192.168.5.101\/alo_kuteshop\/media\/magiccart\/magicslider\/s\/l\/slide1_1.jpg","file":"\/s\/l\/slide1_1.jpg","label":"","position":3,"disabled":0,"removed":0}]]]></content>
+      <status><![CDATA[1]]></status>
+      <config><![CDATA[a:6:{s:5:"width";s:3:"785";s:6:"height";s:3:"478";s:8:"controls";s:1:"1";s:5:"pager";s:1:"1";s:5:"pause";s:4:"6000";s:5:"speed";s:3:"800";}]]></config>
+    </slide>
+    <slide>
+      <title><![CDATA[Slide Home 3]]></title>
+      <identifier><![CDATA[home_03]]></identifier>
+      <content><![CDATA[[{"url":"http:\/\/192.168.5.100\/alo_kuteshop\/media\/magiccart\/magicslider\/\/s\/l\/slidev3_02.jpg","file":"\/s\/l\/slidev3_02.jpg","label":"","position":"2","disabled":0,"removed":0,"html":"","link":""},{"url":"http:\/\/192.168.5.100\/alo_kuteshop\/media\/magiccart\/magicslider\/\/s\/l\/slidev3_03.jpg","file":"\/s\/l\/slidev3_03.jpg","label":"","position":"3","disabled":0,"removed":0,"html":"","link":""},{"url":"http:\/\/192.168.5.100\/alo_kuteshop\/media\/magiccart\/magicslider\/\/s\/l\/slidev3_01.jpg","file":"\/s\/l\/slidev3_01.jpg","label":"","position":"1","disabled":0,"removed":0,"html":"","link":""}]]]></content>
+      <status><![CDATA[1]]></status>
+      <config><![CDATA[a:6:{s:5:"width";s:3:"710";s:6:"height";s:3:"480";s:8:"controls";s:1:"1";s:5:"pager";s:1:"0";s:5:"pause";s:4:"6000";s:5:"speed";s:3:"800";}]]></config>
+    </slide>
+    <slide>
+      <title><![CDATA[Slide Left Category]]></title>
+      <identifier><![CDATA[left-module-01]]></identifier>
+      <content><![CDATA[[{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/s\/l\/slide-left.jpg","file":"\/s\/l\/slide-left.jpg","label":"","position":1,"disabled":0,"removed":0},{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/s\/l\/slide-left3.png","file":"\/s\/l\/slide-left3.png","label":"","position":"3","disabled":0,"removed":0,"html":"","link":""},{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/s\/l\/slide-left2.jpg","file":"\/s\/l\/slide-left2.jpg","label":"","position":"2","disabled":0,"removed":0,"html":"","link":""}]]]></content>
+      <status><![CDATA[1]]></status>
+      <config><![CDATA[a:6:{s:5:"width";s:3:"271";s:6:"height";s:3:"346";s:8:"controls";s:1:"0";s:5:"pager";s:1:"1";s:5:"pause";s:4:"3000";s:5:"speed";s:3:"800";}]]></config>
+    </slide>
+    <slide>
+      <title><![CDATA[Slide Category]]></title>
+      <identifier><![CDATA[slide-category]]></identifier>
+      <content><![CDATA[[{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/c\/a\/category-slide.jpg","file":"\/c\/a\/category-slide.jpg","label":"","position":1,"disabled":0,"removed":0},{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/c\/a\/category-slide2.jpg","file":"\/c\/a\/category-slide2.jpg","label":"","position":"2","disabled":0,"removed":0,"html":"","link":""}]]]></content>
+      <status><![CDATA[1]]></status>
+      <config><![CDATA[a:6:{s:5:"width";s:3:"870";s:6:"height";s:3:"288";s:8:"controls";s:1:"1";s:5:"pager";s:1:"0";s:5:"pause";s:4:"4000";s:5:"speed";s:3:"800";}]]></config>
+    </slide>
+    <slide>
+      <title><![CDATA[Slide Home 7]]></title>
+      <identifier><![CDATA[home_07]]></identifier>
+      <content><![CDATA[[{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/s\/l\/slider1.jpg","file":"\/s\/l\/slider1.jpg","label":"Slider 01","position":"1","disabled":0,"removed":0,"html":"","link":""},{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/s\/l\/slider1_1.jpg","file":"\/s\/l\/slider1_1.jpg","label":"Slider 02","position":"2","disabled":0,"removed":0,"html":"","link":""},{"url":"http:\/\/web.com\/alo_kuteshop\/media\/magiccart\/magicslider\/\/s\/l\/slider1_2.jpg","file":"\/s\/l\/slider1_2.jpg","label":"Slider 03","position":"3","disabled":0,"removed":0,"html":"","link":""}]]]></content>
+      <status><![CDATA[1]]></status>
+      <config><![CDATA[a:6:{s:5:"width";s:3:"890";s:6:"height";s:3:"443";s:8:"controls";s:1:"1";s:5:"pager";s:1:"1";s:5:"pause";s:4:"6000";s:5:"speed";s:3:"800";}]]></config>
+    </slide>
+  </magicslider>
+</root>

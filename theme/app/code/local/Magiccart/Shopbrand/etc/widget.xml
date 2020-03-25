@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: DOng NGuyen<nguyen@dvn.com>
+ * @@Create Date: 2014-03-23 18:59:34
+ * @@Modify Date: 2015-08-04 12:04:22
+ * @@Function:
+ */ -->
+<widgets>
+    <brand type="shopbrand/widget_brand" translate="name description">
+        <name>Brand Widgets</name>
+        <description>Brands</description>
+        <parameters>
+            <template>
+                <required>1</required>
+                <visible>1</visible>
+                <label>Template:</label>
+                <type>select</type> 
+                <values>
+                    <default translate="label description">
+                        <value>magiccart/shopbrand/brand.phtml</value>
+                        <label>Brands</label>
+                    </default>
+                </values>
+            </template>
+        </parameters>
+    </brand>
+    <shopbrand type="shopbrand/widget_shopbrand" translate="name description">
+        <name>Shopbrand Widgets</name>
+        <description>Shop Brand</description>
+        <parameters>
+            <template>
+                <required>1</required>
+                <visible>1</visible>
+                <label>Template:</label>
+                <type>select</type> 
+                <values>
+                    <default translate="label description">
+                        <value>magiccart/shopbrand/shopbrand.phtml</value>
+                        <label>Shop Brand</label>
+                    </default>
+                </values>
+            </template>
+        </parameters>
+    </shopbrand>
+</widgets>

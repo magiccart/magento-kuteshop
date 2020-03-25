@@ -1,0 +1,64 @@
+<?xml version="1.0"?> 
+<!-- /**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: Magiccart <team.magiccart@gmail.com>
+ * @@Create Date: 2014-03-15 23:15:05
+ * @@Modify Date: 2015-12-22 15:01:22
+ * @@Function:
+ */ -->
+<config>
+    <menu>
+        <magiccart translate="title" module="megashop">
+            <title>Magiccart</title>
+            <sort_order>89</sort_order>               
+            <children>
+                <megashop translate="title" module="megashop">
+                    <title>Mega Shop</title>
+                    <sort_order>50</sort_order>
+                    <action>adminhtml/adminhtml_megashop_manage</action>
+                </megashop>
+                <featuredproduct translate="title">
+                    <title>Featured Products</title>
+                    <sort_order>60</sort_order>
+                    <action>adminhtml/adminhtml_featured/index</action>
+                </featuredproduct>
+            </children>
+        </magiccart>
+    </menu>
+	<acl>
+		<resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+			<admin>
+				<children>	
+					<magiccart translate="title" module="megashop">
+						<title>Magiccart</title>
+						<sort_order>89</sort_order>               
+						<children>
+							<megashop translate="title" module="megashop">
+								<title>Mega Shop</title>
+								<sort_order>50</sort_order>
+							</megashop>
+						</children>
+					</magiccart>	
+					<system>
+						<children>
+							<config>
+								<children>
+									<megashop>
+										<title>Mega Shop</title>
+									</megashop>
+								</children>
+							</config>
+						</children>
+					</system>					
+				</children>
+			</admin>
+        </resources>
+	</acl>
+</config>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root>
+  <permissions>
+    <admin_block>
+      <block_name><![CDATA[newsletter/subscribe]]></block_name>
+      <is_allowed><![CDATA[1]]></is_allowed>
+    </admin_block>
+    <admin_block>
+      <block_name><![CDATA[tag/popular]]></block_name>
+      <is_allowed><![CDATA[1]]></is_allowed>
+    </admin_block>
+  </permissions>
+</root>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<root>
+  <pages>
+    <cms_block>
+      <title><![CDATA[Kute Shop Demo4]]></title>
+      <root_template><![CDATA[one_column]]></root_template>
+      <identifier><![CDATA[kute-shop-demo4]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div class="row">
+<div class="col-sm-3 slider-left"><span class="hidden">hidden</span></div>
+<div class="col-sm-9 header-top-right">
+<div class="header-top-right-wapper">
+<div class="homeslider">{{widget type="magicslider/widget_slide" identifier="home_4" template="magiccart/magicslider/magicslider.phtml"}}</div>
+</div>
+</div>
+</div>
+<div class="group-banner4 clearfix">
+<ul class="list-banner">
+<li>
+<div class="banner-opacity"><a href="#"><img alt="Banner" src="{{media url="wysiwyg/alothemes/static/demo4/banner3.jpg"}}" /></a></div>
+</li>
+<li>
+<div class="banner-opacity"><a href="#"><img alt="Banner" src="{{media url="wysiwyg/alothemes/static/demo4/banner4.jpg"}}" /></a></div>
+</li>
+<li>
+<div class="banner-opacity"><a href="#"><img alt="Banner" src="{{media url="wysiwyg/alothemes/static/demo4/banner5.jpg"}}" /></a></div>
+</li>
+<li>
+<div class="banner-opacity"><a href="#"><img alt="Banner" src="{{media url="wysiwyg/alothemes/static/demo4/banner6.jpg"}}" /></a></div>
+</li>
+</ul>
+</div>]]></content>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+  </pages>
+</root>

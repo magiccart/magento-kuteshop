@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Magiccart 
+ * @category 	Magiccart 
+ * @copyright 	Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license 	http://www.magiccart.net/license-agreement.html
+ * @Author: Magiccart<team.magiccart@gmail.com>
+ * @@Create Date: 2014-05-04 21:57:32
+ * @@Modify Date: 2014-06-05 19:51:00
+ * @@Function:
+ */ -->
+<layout>
+    <default>
+		<reference name="head">
+			<!-- <action method="addJs"><script>jscolor/jscolor.js</script></action> -->
+			<action method="addJs"><script>magiccart/jquery.min.js</script></action>
+			<action method="addJs"><script>magiccart/jquery.noconflict.js</script></action>
+			<action method="addJs"><script>magiccart/mcolorpicker/mcolorpicker.hack.js</script></action>
+			<action method="addJs"><script>magiccart/adminhtml/jquery.alothemes.js</script></action>
+		</reference>
+    </default>
+</layout>
+

@@ -1,0 +1,37 @@
+/* mini cart */
+.miniCartWrap{vertical-align:top;background: url("../images/cart.png") no-repeat scroll 0 7px;position: relative;z-index: 30;}
+.miniCartWrap{padding-left: 25px;padding-top: 12px;float: right;line-height: 14px;}
+.main-top-links{float: right;}
+.content-cart .btn-heart,.content-cart .top-links{margin-right: 16px;}
+.content-cart{margin-top: 10px;position: absolute;right: 0px;top: 20px;}
+.cart-header{line-height: normal;display: none;}
+.mini-maincart .mini-contentCart{position:absolute;right:0;top:100%;width:300px;line-height:30px;padding:20px;-webkit-box-shadow: 0px 4px 7px 0px rgba(50, 50, 50, 0.2);-moz-box-shadow: 0px 4px 7px 0px rgba(50, 50, 50, 0.2);box-shadow: 0px 4px 7px 0px rgba(50, 50, 50, 0.2);}
+.mini-maincart .mini-contentCart p.empty{margin:0;cursor: text;}
+.mini-contentCart .mini-products-list{margin:0;padding:0;}
+.mini-contentCart .item .product-details .product-name{line-height: 10px;font-size: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;height: 20px;line-height: 20px;}
+.crat-icon .zero,.crat-icon .item{padding:0px;z-index: 2;position: absolute;width: 32px;height: 22px ;text-align: center;background-image: url("../images/notify.png");background-position: 0 0;background-repeat: no-repeat;left: 19px;top: -8px;line-height: 19px;}
+.cartSummary .icon-cart{padding:0px;font-size:30px;line-height: 30px;}
+.cartSummary .mt-cart-title{ color: #555555;text-transform: capitalize;line-height: normal;margin: 0px;vertical-align: top; font-weight: normal;}
+.mini-contentCart .subtotal{clear:both;display:block;padding:10px 0;margin:0;}
+.mini-contentCart .subtotal .label{color:#333;font-size:14px;padding: 10px 0;}
+.mini-contentCart .subtotal .price{color:#999;font-size: 18px;float: right;}
+.mini-contentCart .actions a{border:0px solid #aaaaaa;color:#666;text-decoration:none;font-size:11px;line-height:35px;padding:0 17px;display:inline-block;margin:5px 0px; text-transform: uppercase;transition:all 500ms ease-in-out 0s;-moz-transition:all 500ms ease-in-out 0s;-webkit-transition:all 500ms ease-in-out 0s;-o-transition:all 500ms ease-in-out 0s;}
+.mini-contentCart .actions a:hover{background-color:#ff3366;color: #fff;}
+.mini-contentCart .actions a.checkout{background-color:#ff3366;color: #fff;border:0px solid #ff5555;float: right;}
+.mini-contentCart .actions a.checkout:hover{ opacity: 0.8;}
+#miniMagiccart .item:hover{background-color:#dddddd}
+#miniMagiccart a.btn-remove,a.btn-edit,a.btn-remove{float:none;margin:0;display: inline-block;vertical-align: top;}
+.mini-contentCart .block-content .block-subtitle{margin:0;text-transform: uppercase;}
+#toPopup .countDown {background: #eee none repeat scroll 0 0;border-left: 1px solid #eaeaea;border-bottom: 1px solid #eaeaea;display: inline-block;font-size: 11px;font-weight: bold;height: 20px;line-height: 20px;width: 20px;position: absolute;top: 0;right: 0;}
+#toPopup .response p{padding: 0 14px 0 0;}
+/*popup*/
+#toPopup{background:none repeat scroll 0 0 #FFFFFF;box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);-o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);-ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);border:0 solid #ccc;color:#333333;font-size:13px;position:fixed;top:30%;left:40%;width:300px;z-index:999999;padding:10px;text-align: center;}
+#popupAjaxcart .label,#popupAjaxcart .availability span{font-weight:300}
+/* option cart */
+#toPopup .input-box{margin:10px 0 10px}
+#toPopup label.required em{color:#eb340a}
+#toPopup .action-cart{margin:20px 0 15px 0}
+#toPopup .action-cart .button{margin:0 5px;}
+/* overlay loading */
+#popupAjaxcart .overlay{z-index:12;position:fixed;display:none;height:100%;width:100%;background-image: url(../images/overlay.png);background-repeat: repeat;top:0;left:0}
+#popupAjaxcart .loading{background:url("../images/loading.gif") no-repeat scroll center center #fff;box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);-o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);-ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);display:none;width:55px;height:55px;left:48%;opacity:1;padding:20px;position:fixed;top:38%;z-index:999999}

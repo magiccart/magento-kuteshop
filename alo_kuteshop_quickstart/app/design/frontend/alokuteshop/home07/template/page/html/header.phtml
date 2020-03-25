@@ -1,0 +1,136 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<div class="header-container header-color color">
+    <div class="header_full">
+    	<div class="header">
+    	    <div class="header-top">
+    	    	<div class="container">
+				    <div class="row">
+				    	<div class="top-left col-md-6 col-sm-6 col-xs-12">
+				    	    <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
+				    	    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('call-us')->toHtml(); ?>
+				    	</div>
+				    	<div class="top-right col-md-6 col-sm-6 col-xs-12">
+				    		<div class="header-setting">
+								<div class="settting-switcher">
+								    <div class="dropdown-toggle">
+										<div class="text-setting"><?php echo $this->__('My Account'); ?></div>
+									</div>
+									<div class="dropdown-switcher">
+										<div class="top-links-alo">
+									    	<div class="header-top-link">
+												<?php echo $this->getChildHtml('topLinks') ?>
+											</div>
+								        </div>
+									</div>
+								</div>
+								<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('support')->toHtml(); ?>
+								<div class="content-cart">
+						    		<div class="miniCartWrap">
+										<?php echo $this->getChildHtml('ajaxcart'); ?>
+									</div>
+						    	</div>
+							</div>
+				    	</div>
+				    </div>
+				</div>
+    	    </div>
+    	    <div class="header-content">
+    	        <div class="header-sticker">
+	    	    	<div class="container">
+	    	    	   <div class="main-header">
+						    <div class="row">
+						    	<div class="content-logo col-sm-3 col-xs-12">
+						    		<div class="header-logo">
+										 <?php if ($this->getIsHomePage()):?>
+											<h1 class="logo">
+												<strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo1"><img class="img-responsive" src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+											</h1>
+										<?php else:?>
+											<a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img class="img-responsive" src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+										<?php endif?>
+									</div>
+						    	</div>
+						    	<div class="header-config-bg col-xs-12 col-sm-12 col-md-12">
+									<div class="custom-menu">
+										<?php echo $this->getChildHtml('topMenu') ?>
+									</div>
+								</div>
+						    </div>
+					    </div>
+					</div>
+				</div>
+				<div class="menu-mobile"></div>
+    	    </div>
+    	    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('service-header')->toHtml(); ?>
+            <div class="header-bottom">
+				<div class="container">
+				    <div class="border-bottom">
+					    <div class="row">
+					        <div class="col-sm-3 menu-mobile-none">
+					        	<?php echo $this->getChildHtml('top_verticalmenu') ?>
+					        </div>
+						    <div class="content-seach col-sm-6 col-md-7">
+					    		<div class="header-search">
+									<?php echo $this->getChildHtml('topSearch') ?>
+								</div>
+					    	</div>
+					    	<div class="col-sm-3 col-md-2 group-link-main-menu">
+					    	    <div class="header-setting">
+							    	<div class="settting-switcher">
+								    	<div class="top-form-language">
+											<?php echo $this->getChildHtml('store_language') ?>
+										</div>
+								    </div>
+							    </div>
+						    	<div class="header-setting">
+							    	<div class="settting-switcher">
+										<div class="dropdown-toggle">
+											<div class="text-setting"><?php echo Mage::app()->getStore()->getCurrentCurrencyCode(); ?></div>
+										</div>
+										<?php $currencyHtml = $this->getChildHtml('currency');?>
+										<?php if($currencyHtml): ?>
+										<div class="dropdown-switcher">
+											<div class="currency_top"><?php echo $currencyHtml ?></div>
+										</div>
+										<?php endif ?>
+									</div>
+							    </div>
+					    	</div>
+						</div>
+					</div>
+				</div>
+            </div>
+    	</div>
+    </div>
+			
+        <?php echo $this->getChildHtml('topContainer'); ?>
+</div>
+

@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <cms_block>
+      <title><![CDATA[Support]]></title>
+      <identifier><![CDATA[support]]></identifier>
+      <content><![CDATA[<div class="support-link">
+                <a href="#">Services</a>
+                <a href="#">Support</a>
+            </div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Left Module Categories]]></title>
+      <identifier><![CDATA[left-module]]></identifier>
+      <content><![CDATA[<div class="left-module-slide">{{widget type="magicslider/widget_slide" identifier="left-module-01" template="magiccart/magicslider/magicslider.phtml"}}</div>
+<div class="block left-module">{{widget type="magicproduct/widget_magicproduct" identifier="special-products" template="magiccart/magicproduct/magicproduct_custom.phtml"}}</div>
+<div class="left-tag">{{block type="tag/popular" name="tags_popular" template="tag/popular.phtml"}}</div>
+<div class="block block-testimonial">{{widget type="testimonial/widget_slide" template="magiccart/testimonial/slide.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Slide Category]]></title>
+      <identifier><![CDATA[slide-category]]></identifier>
+      <content><![CDATA[<div class="category-slider">{{widget type="magicslider/widget_slide" identifier="slide-category" template="magiccart/magicslider/magicslider.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Best Sale(Left Detail)]]></title>
+      <identifier><![CDATA[block_best]]></identifier>
+      <content><![CDATA[<div class="block left-module">{{widget type="magicproduct/widget_magicproduct" identifier="best-sale" template="magiccart/magicproduct/magicproduct_custom.phtml"}}
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Best image(Left Detail)]]></title>
+      <identifier><![CDATA[left-image]]></identifier>
+      <content><![CDATA[<!-- left image -->
+<div class="block col-left-image left-module">
+<div class="banner-opacity"> <img class="img-responsive hot-cate-img" alt="ads-banner" src="{{media url="wysiwyg/alothemes/static/icon-money.png"}}" />
+<h2>100% Money Back</h2>
+<h2>Guaranteed</h2>
+<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
+<a href="#">Read more <i class="fa fa-angle-double-right"><span class="hidden">facebook</span></i></a></div>
+</div>
+<!--./left image-->]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[On sale (Detail)]]></title>
+      <identifier><![CDATA[onsale]]></identifier>
+      <content><![CDATA[<div class="block left-module left-module-03">{{widget type="magicproduct/widget_magicproduct" identifier="on-sale" template="magiccart/magicproduct/magicproduct.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[block_map_contacts]]></title>
+      <identifier><![CDATA[block_map_contacts]]></identifier>
+      <content><![CDATA[<div class="map-conttact">
+    <h3 class="page-subheading">Information</h3>
+	<p>Lorem ipsum dolor sit amet onsectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor dapibus eget. Mauris tincidunt aliquam lectus sed vestibulum. Vestibulum bibendum suscipit mattis.</p>
+	<br/>
+	<ul>
+		<li>Praesent nec tincidunt turpis.</li>
+		<li>Aliquam et nisi risus.&nbsp;Cras ut varius ante.</li>
+		<li>Ut congue gravida dolor, vitae viverra dolor.</li>
+	</ul>
+	<br/>
+	<ul class="store_info">
+		<li><i class="fa fa-home"></i>Our business address is 1063 Freelon Street San Francisco, CA 95108</li>
+		<li><i class="fa fa-phone"></i><span>+ 021.343.7575</span></li>
+		<li><i class="fa fa-phone"></i><span>+ 020.566.6666</span></li>
+		<li><i class="fa fa-envelope"></i>Email: <span><a href="mailto:suport@alothemes.com">suport@alothemes.com</a></span></li>
+	</ul> 
+</div>	]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Banner Top Menu (Sports)]]></title>
+      <identifier><![CDATA[banner-top-menu]]></identifier>
+      <content><![CDATA[<div class="banner-top-menu"><img class="img-responsive" src="{{media url="wysiwyg/alothemes/static/banner-topmenu.jpg"}}" alt="" /></div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Menu Vertical Custom html]]></title>
+      <identifier><![CDATA[vertical-custom-html]]></identifier>
+      <content><![CDATA[<div class="mega-custom-html"><a href="#"><img alt="" src="{{media url="wysiwyg/alothemes/static/banner-megamenu.jpg"}}" /></a></div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[block_footer_top]]></title>
+      <identifier><![CDATA[block_footer_top]]></identifier>
+      <content><![CDATA[<div class="row">
+<div class="col-sm-3">
+<div class="footer-logo"><a href="#"><img class="img-responsive" alt="logo" src="{{media url="wysiwyg/alothemes/static/demo7/logo7.png"}}" /></a></div>
+</div>
+<div class="col-sm-12 col-md-6">
+<div class="footer-menu">
+<ul>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Affiliates</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms of Use</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="col-sm-12 col-md-3">
+<div class="block-newletter">{{block type="newsletter/subscribe" template="newsletter/subscribe.phtml"}}</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[block_footer_bottom]]></title>
+      <identifier><![CDATA[block_footer_bottom]]></identifier>
+      <content><![CDATA[<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-6 col-mobile-12 col-xs-6">
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading">Infomation</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<div class="block1 block-content-statick toggle-content">
+<ul class="address-list">
+<li class="feature-icon location first">
+<p class="no-margin"><span class="address">Address:</span><span class="tit-contain">2046 Blue Spruce Lane Laurel, tetxac, Orton Tolanto, Canada</span></p>
+</li>
+<li class="feature-icon phone">
+<p><span>Phone:</span><span class="tit-contain">0200 410-369-3920</span></p>
+</li>
+<li class="feature-icon mobile last"><span>Hotline:</span><span class="tit-contain">090 999 8686</span></li>
+<li class="feature-icon email">
+<p><span>Email:</span><a class="tit-contain" href="#">support@alothemes.com</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-6 col-mobile-12 col-xs-6">
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading">Company</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<div class="block-content block-content-statick toggle-content">
+<ul class="bullet">
+<li><a href="#">About Us</a></li>
+<li><a href="#">Testimonials</a></li>
+<li><a href="#">Affiliate Program</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-6 col-mobile-12 col-xs-6">
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading">My Account</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<div class="block-content block-content-statick toggle-content">
+<ul class="bullet">
+<li><a href="#">My Orders</a></li>
+<li><a href="#">My Credit Slips</a></li>
+<li><a href="#">My Addresses</a></li>
+<li><a href="#">My Personal Info</a></li>
+<li><a href="#">Specials</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-6 col-mobile-12 col-xs-6">
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading">Support</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<div class="block-content block-content-statick toggle-content">
+<ul class="bullet">
+<li><a href="#">Payments</a></li>
+<li><a href="#">Saved Cards</a></li>
+<li><a href="#">Shipping Free</a></li>
+<li><a href="#">Cancellation</a></li>
+<li><a href="#">Support Online</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading introduce-title">Let's Socialize</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<ul class="list-inline toggle-content">
+<li><a class="social-link facebook" href="#"><i class="fa fa-facebook"><span class="hidden">facebook</span></i></a></li>
+<li><a class="social-link pinterest-p" href="#"><i class="fa fa-pinterest-p"><span class="hidden">pinterest</span></i></a></li>
+<li><a class="social-link vk" href="#"><i class="fa fa-vk"><span class="hidden">fa-vk</span></i></a></li>
+<li><a class="social-link twitter" href="#"><i class="fa fa-twitter"><span class="hidden">twitter</span></i></a></li>
+<li><a class="social-link google-plus" href="#"><i class="fa fa-google-plus"><span class="hidden">google-plus</span></i></a></li>
+</ul>
+</div>
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading introduce-title">payment</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<div class="widget-body toggle-content"><img class="img-responsive" alt="logo" src="{{media url="wysiwyg/alothemes/static/demo7/payment.png"}}" /></div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Page Content Heading(Demo7)]]></title>
+      <identifier><![CDATA[heading]]></identifier>
+      <content><![CDATA[<div class="box-products content_heading_fashion alo-left">{{widget type="megashop/widget_megashop" identifier="mega-shop-fashion-home7" template="magiccart/megashop/megashop.phtml"}}</div>
+<div class="box-products content_heading_sports alo-right">{{widget type="megashop/widget_megashop" identifier="mega-shop-sport-home7" template="magiccart/megashop/megashop.phtml"}}</div>
+<div class="box-products content_heading_electronics alo-left">{{widget type="megashop/widget_megashop" identifier="mega-shop-electronics-home7" template="magiccart/megashop/megashop.phtml"}}</div>
+<div class="box-products content_heading_digital alo-right">{{widget type="megashop/widget_megashop" identifier="mega-shop-digital-home7" template="magiccart/megashop/megashop.phtml"}}</div>
+<div class="box-products content_heading_furniture alo-left">{{widget type="megashop/widget_megashop" identifier="mega-shop-furniture-home7" template="magiccart/megashop/megashop.phtml"}}</div>
+<div class="box-products content_heading_jewelry alo-right">{{widget type="megashop/widget_megashop" identifier="mega-shop-jewelry-home7" template="magiccart/megashop/megashop.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Brand showcase and Latest Posts Blog]]></title>
+      <identifier><![CDATA[postblock_0]]></identifier>
+      <content><![CDATA[<div class="alo-blog clearfix">{{widget type="blog/slide" title="Latest Posts Blog" categories="1" blocks_count="8" slide="1" controls="1" speed="700" pause="1" row="1" portrait="1" landscape="2" tablet="3" desktop="4" visibleItems="4" marginColumn="30" widthImages="270" heightImages="257"}}</div>
+<div class="the-brands">{{widget type="shopbrand/widget_brand" template="magiccart/shopbrand/brand.phtml"}}</div>
+]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[service-header]]></title>
+      <identifier><![CDATA[service-header]]></identifier>
+      <content><![CDATA[   <div class="service-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="item">
+                        <a href="#">
+						    <img alt="Service" src="{{media url="wysiwyg/alothemes/static/demo7/s1.png"}}" />
+                            <span>Worldwide Delivery</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="item">
+                        <a href="#">
+                            <img alt="Service" src="{{media url="wysiwyg/alothemes/static/demo7/s2.png"}}" />
+                            <span>24/7 Help Center</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="item">
+                        <a href="#">
+                            <img alt="Service" src="{{media url="wysiwyg/alothemes/static/demo7/s3.png"}}" />
+                            <span>shop with confidence</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="item">
+                        <a href="#">
+                            <img alt="Service" src="{{media url="wysiwyg/alothemes/static/demo7/s4.png"}}" />
+                            <span>Safe Payment</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[call-us]]></title>
+      <identifier><![CDATA[call-us]]></identifier>
+      <content><![CDATA[<p><a class="call-us" href="#">Call Us: +09 957774334</a></p>
+<div class="top-bar-social"><a href="#"><i class="fa fa-facebook"><span class="hidden">hidden</span></i></a> <a href="#"><i class="fa fa-twitter"><span class="hidden">hidden</span></i></a> <a href="#"><i class="fa fa-pinterest"><span class="hidden">hidden</span></i></a> <a href="#"><i class="fa fa-google-plus"><span class="hidden">hidden</span></i></a></div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+  </blocks>
+</root>

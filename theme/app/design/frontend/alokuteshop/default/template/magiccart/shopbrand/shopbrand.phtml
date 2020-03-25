@@ -1,0 +1,90 @@
+<?php
+/**
+ * Magiccart 
+ * @category 	Magiccart 
+ * @copyright 	Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license 	http://www.magiccart.net/license-agreement.html
+ * @Author: DOng NGuyen<nguyen@dvn.com>
+ * @@Create Date: 2014-05-08 22:57:12
+ * @@Modify Date: 2015-08-05 18:58:23
+ * @@Function:
+ */
+ ?>
+<?php $title = isset($this->config['title']) ? $this->config['title'] : ''; ?>
+<?php 
+if(!$this->config['enabled']) return;
+// if($this->getStatus() == 2) return; 
+$selector = $this->generateRandomString();
+
+$brands = $this->getBrands();
+$ajax = json_encode($this->getProductCfg());
+$numTabs = count($brands);
+if(!$numTabs) return;
+$_rowCount 	= isset($this->config['rows']) ? $this->config['rows'] : 1;
+$tag = ($_rowCount >1) ? 'div' : 'ul';
+$_collectionSize = count($brands);
+?>
+<div class= "<?php echo $selector?> box-shopbrand">
+    <div class="block-title-brands">
+    	<?php echo $title ? '<h2 class="title">' . '<span>' .$title. '</span>' . '</h2>' : '' ?>
+    </div>
+    <div class="brand-shopbrand-box">
+		<<?php echo $tag ?> class="shopbrand magictabs" data-ajax ='<?php echo $ajax ?>'>
+		<?php $active = $this->getTabActive();
+			$limit = $this->getNumProduct();
+			$single = ($numTabs ==1) ? 'single' : '';
+			foreach ($brands as $brand):
+				if ($_rowCount > 1 && $i++%$_rowCount==0) 
+				echo '<ul class="products-grid-rows">';
+					$type = $brand->getBrandId();
+					$status = ($type == $active) ? "active loaded $single" : '';
+					echo '<li class="item '.$status.'" data-type ="'.$type.'"><img class="brand img-responsive" src="' . $this->getImage($brand) .' " alt="' . $this->__($brand->getTitle()) . '" title="' .$this->__($brand->getTitle()) .'" /></li>';
+
+				if ($_rowCount > 1 && $i%$_rowCount==0 || $i==$_collectionSize)
+				echo '</ul>';
+			endforeach;
+		?>
+		</<?php echo $tag; ?>>
+	    
+		<div class="ajax_loading" style="display:none" data-url="<?php echo $this->getUrl('shopbrand/index/ajax', array('_type' => 'direct_link'))?>">
+			<img src="<?php echo $this->getSkinUrl('magiccart/plugin/images/loading.gif')?>" alt="<?php echo $this->__('Loading...');?>"/>
+		</div>
+		<?php 
+			$margin  = (int) $this->getData('marginColumn');
+			$slide   = json_encode($this->setFlexiselArray());
+			$options = json_encode($this->getItemsDevice());
+		?>
+		<div class="content-products" data-margin="<?php echo $margin ?>" data-slider='<?php echo $slide ?>' data-options='<?php echo $options; ?>'>
+		<?php 
+			$timer = $this->getTimer();
+			if($timer){
+				echo $this->getContentActive('magiccart/shopbrand/product/gridtimer.phtml');	
+			} else {
+				echo $this->getContentActive('magiccart/shopbrand/product/grid.phtml');	
+			}
+			
+		?>
+		</div>
+		<!-- MAP -->
+		<?php echo $this->getChildHtml('product.tooltip');?>
+		<!-- MAP -->
+	</div>
+</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function ($) {
+	jQuery(".<?php echo $selector?>").magicproduct({
+		selector : ".<?php echo $selector?>", // Selector product grid
+	});
+    (function(selector){
+        var $content = $(selector);
+        var $slider  = $('.shopbrand', $content);
+        $slider.bxSlider({
+            <?php echo $this->getBrandSlider() ?>
+
+        });
+
+    })(".<?php echo $selector ?>");
+});
+</script>
+

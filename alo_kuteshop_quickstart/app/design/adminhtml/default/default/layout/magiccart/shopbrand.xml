@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<shopbrand_adminhtml_brand_index>
+<!-- Add Tab from layout -->
+<!-- 		<reference name="left">
+            <block type="shopbrand/adminhtml_brand_edit_tabs" name="shopbrand_brand_edit_tabs">
+                <block type="shopbrand/adminhtml_brand_edit_tab_form" name="shopbrand_brand_edit_tab_form" />
+                <block type="shopbrand/adminhtml_brand_edit_tab_image" name="shopbrand_brand_edit_tab_image"/>
+                <block type="shopbrand/adminhtml_brand_edit_tab_product" name="shopbrand_brand_edit_tab_product"/>
+                <action method="addTab"><name>form_section</name><block>shopbrand_brand_edit_tab_form</block></action>
+                <action method="addTab"><name>image_section</name><block>shopbrand_brand_edit_tab_image</block></action>
+                <action method="addTab"><name>product_section</name><block>shopbrand_brand_edit_tab_product</block></action>
+            </block>
+        </reference> -->
+		<reference name="content">
+			<block type="shopbrand/adminhtml_brand" name="shopbrand"/>
+		</reference>
+	</shopbrand_adminhtml_brand_index>
+
+   <shopbrand_adminhtml_brand_product>
+       <block type="core/text_list" name="root" output="toHtml">
+           <block type="shopbrand/adminhtml_brand_edit_tab_product" name="product.grid"/>
+           <block type="adminhtml/widget_grid_serializer" name="grid_serializer">
+               <reference name="grid_serializer">
+                   <action method="initSerializerBlock">
+                       <grid_block_name>product.grid</grid_block_name>
+                       <data_callback>getSelectedProducts</data_callback>
+                       <hidden_input_name>links[products]</hidden_input_name>
+                       <reload_param_name>products</reload_param_name>
+                   </action>
+                   <action method="addColumnInputName">
+                       <input_name>position</input_name>
+                   </action>
+               </reference>
+           </block>
+       </block>
+   </shopbrand_adminhtml_brand_product>
+   <shopbrand_adminhtml_brand_productgrid>
+            <block type="core/text_list" name="root" output="toHtml">
+                <block type="shopbrand/adminhtml_brand_edit_tab_product" name="product.grid"/>
+            </block>
+    </shopbrand_adminhtml_brand_productgrid>
+
+</layout>

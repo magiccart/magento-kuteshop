@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<root>
+  <pages>
+    <cms_block>
+      <title><![CDATA[Kute Shop Demo2]]></title>
+      <root_template><![CDATA[one_column]]></root_template>
+      <identifier><![CDATA[kute-shop-demo2]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div class="row">
+<div class="col-sm-3 slider-left"><span class="hidden">hidden</span></div>
+<div class="col-sm-9 header-top-right">
+<div class="homeslider">{{widget type="magicslider/widget_slide" identifier="home_2" template="magiccart/magicslider/magicslider.phtml"}}</div>
+</div>
+</div>
+<div class="latest-deals-product">
+<div class="block-title-tabs block-title-tabs-custom">
+<div class="magictabs">
+<h3 class="item"><span class="title">Latest Deals</span></h3>
+</div>
+</div>
+<div class="lastest-content">{{widget type="magicproduct/widget_magicproduct" identifier="latest_deals_home2" template="magiccart/magicproduct/magicproduct.phtml"}}</div>
+</div>]]></content>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+  </pages>
+</root>

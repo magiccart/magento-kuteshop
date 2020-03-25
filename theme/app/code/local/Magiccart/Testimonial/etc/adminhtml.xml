@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: Magiccart<team.magiccart@gmail.com>
+ * @@Create Date: 2014-03-23 18:59:34
+ * @@Modify Date: 2016-02-16 08:46:00
+ * @@Function:
+ */ -->
+<config>
+	<menu>
+		<magiccart>
+			<title>Magiccart</title>
+			<sort_order>89</sort_order>
+			<children>
+				<testimonial module="testimonial">
+					<title>Testimonial</title>
+					<sort_order>90</sort_order>
+					<action>adminhtml/testimonial</action>
+				</testimonial>
+			</children>	
+		</magiccart>
+	</menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <magiccart translate="title" module="testimonial">
+                        <title>Magiccart</title>
+                        <sort_order>89</sort_order>               
+                        <children>
+                            <testimonial translate="title" module="testimonial">
+                                <title>Testimonial</title>
+                                <sort_order>90</sort_order>
+                            </testimonial>
+                        </children>
+                    </magiccart>   
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <testimonial>
+                                        <title>Testimonial</title>
+                                    </testimonial>
+                                </children>
+                            </config>
+                        </children>
+                    </system>                 
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
+

@@ -1,0 +1,40 @@
+<?php $title = $this->getTitle() ?>
+<?php $selector = 'slider'.md5(rand()); //rand(0,666666); ?>
+<?php $categories = $this->getCategories(); if(!count($categories)) return;?>
+<div id="<?php echo $selector ?>">
+    <?php echo $title ? '<h2 class="title item">' . '<span>' .$title. '</span>' . '</h2>' : '' ?>
+    <ul class="categories">
+    <?php foreach ($categories as $cat) :?>
+        <li class="cat-item">
+            <a href="<?php echo $cat->getUrl() ? $cat->getUrl() : '#' ?>">
+                <img class="cat img-responsive" src="<?php echo Mage::getBaseUrl ( 'media' ) ."/catalog/category/" . $cat->getMagicThumbnail();?>" alt="<?php echo $this->__($cat->getName()) ?>" title="<?php echo $this->__($cat->getName()) ?>" />
+            </a>
+            <h3 class="cat-title"><a href="<?php echo $cat->getUrl() ? $cat->getUrl() : '#' ?>"><?php echo $cat->getName() ?></a></h3>
+            <div class="short_desc"><?php echo $cat->getShortDesc() ?></div>
+        </li>
+    <?php endforeach ?>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    jQuery( document ).ready(function($) {
+        (function(selector){
+            var $content = $(selector);
+            var $slider  = $('.categories', $content);
+            $slider.bxSlider({
+                <?php //echo $this->getSlider() ?>
+                slideWidth: 320,
+                slideMargin: 85,
+                pager:true,
+                minSlides: 3,
+                maxSlides: 3,
+                visibleItems:3,
+                infiniteLoop: true,
+                moveSlides: 1,
+                responsiveBreakpoints : {480: 1, 640: 2, 768: 3, 900: 3},
+            });
+
+        })("#<?php echo $selector ?>");
+    });
+</script>
+

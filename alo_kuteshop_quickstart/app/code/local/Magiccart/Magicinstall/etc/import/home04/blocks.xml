@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <cms_block>
+      <title><![CDATA[Support]]></title>
+      <identifier><![CDATA[support]]></identifier>
+      <content><![CDATA[<div class="support-link">
+                <a href="#">Services</a>
+                <a href="#">Support</a>
+            </div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Left Module Categories]]></title>
+      <identifier><![CDATA[left-module]]></identifier>
+      <content><![CDATA[<div class="left-module-slide">{{widget type="magicslider/widget_slide" identifier="left-module-01" template="magiccart/magicslider/magicslider.phtml"}}</div>
+<div class="block left-module">{{widget type="magicproduct/widget_magicproduct" identifier="special-products" template="magiccart/magicproduct/magicproduct_custom.phtml"}}</div>
+<div class="left-tag">{{block type="tag/popular" name="tags_popular" template="tag/popular.phtml"}}</div>
+<div class="block block-testimonial">{{widget type="testimonial/widget_slide" template="magiccart/testimonial/slide.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Slide Category]]></title>
+      <identifier><![CDATA[slide-category]]></identifier>
+      <content><![CDATA[<div class="category-slider">{{widget type="magicslider/widget_slide" identifier="slide-category" template="magiccart/magicslider/magicslider.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Best Sale(Left Detail)]]></title>
+      <identifier><![CDATA[block_best]]></identifier>
+      <content><![CDATA[<div class="block left-module">{{widget type="magicproduct/widget_magicproduct" identifier="best-sale" template="magiccart/magicproduct/magicproduct_custom.phtml"}}
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Best image(Left Detail)]]></title>
+      <identifier><![CDATA[left-image]]></identifier>
+      <content><![CDATA[<!-- left image -->
+<div class="block col-left-image left-module">
+<div class="banner-opacity"> <img class="img-responsive hot-cate-img" alt="ads-banner" src="{{media url="wysiwyg/alothemes/static/icon-money.png"}}" />
+<h2>100% Money Back</h2>
+<h2>Guaranteed</h2>
+<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
+<a href="#">Read more <i class="fa fa-angle-double-right"><span class="hidden">facebook</span></i></a></div>
+</div>
+<!--./left image-->]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[On sale (Detail)]]></title>
+      <identifier><![CDATA[onsale]]></identifier>
+      <content><![CDATA[<div class="block left-module left-module-03">{{widget type="magicproduct/widget_magicproduct" identifier="on-sale" template="magiccart/magicproduct/magicproduct.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[block_map_contacts]]></title>
+      <identifier><![CDATA[block_map_contacts]]></identifier>
+      <content><![CDATA[<div class="map-conttact">
+    <h3 class="page-subheading">Information</h3>
+	<p>Lorem ipsum dolor sit amet onsectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor dapibus eget. Mauris tincidunt aliquam lectus sed vestibulum. Vestibulum bibendum suscipit mattis.</p>
+	<br/>
+	<ul>
+		<li>Praesent nec tincidunt turpis.</li>
+		<li>Aliquam et nisi risus.&nbsp;Cras ut varius ante.</li>
+		<li>Ut congue gravida dolor, vitae viverra dolor.</li>
+	</ul>
+	<br/>
+	<ul class="store_info">
+		<li><i class="fa fa-home"></i>Our business address is 1063 Freelon Street San Francisco, CA 95108</li>
+		<li><i class="fa fa-phone"></i><span>+ 021.343.7575</span></li>
+		<li><i class="fa fa-phone"></i><span>+ 020.566.6666</span></li>
+		<li><i class="fa fa-envelope"></i>Email: <span><a href="mailto:suport@alothemes.com">suport@alothemes.com</a></span></li>
+	</ul> 
+</div>	]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Banner Top Menu (Sports)]]></title>
+      <identifier><![CDATA[banner-top-menu]]></identifier>
+      <content><![CDATA[<div class="banner-top-menu"><img class="img-responsive" src="{{media url="wysiwyg/alothemes/static/banner-topmenu.jpg"}}" alt="" /></div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Menu Vertical Custom html]]></title>
+      <identifier><![CDATA[vertical-custom-html]]></identifier>
+      <content><![CDATA[<div class="mega-custom-html"><a href="#"><img alt="" src="{{media url="wysiwyg/alothemes/static/banner-megamenu.jpg"}}" /></a></div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Page Content Heading(Home3,4)]]></title>
+      <identifier><![CDATA[heading]]></identifier>
+      <content><![CDATA[<div class="box-products hot-deals-box">{{widget type="magiccategory/widget_magiccategory" identifier="hot-deals" template="magiccart/magiccategory/magiccategory-hotdeals.phtml"}}</div>
+<div class="box-products new-arrivals">{{widget type="magiccategory/widget_magiccategory" identifier="new-arrivals-in" template="magiccart/magiccategory/magiccategory.phtml"}}</div>
+<div class="box-products top-sellers">{{widget type="magiccategory/widget_magiccategory" identifier="top-sellers-in" template="magiccart/magiccategory/magiccategory.phtml"}}</div>
+<div class="block-banner">
+<div class="container">
+<div class="block-banner-left">
+<div class="banner-opacity"><a href="#"><img alt="Banner" src="{{media url="wysiwyg/alothemes/static/demo3/banner1.jpg"}}" /></a></div>
+</div>
+<div class="block-banner-right">
+<div class="banner-opacity"><a href="#"><img alt="Banner" src="{{media url="wysiwyg/alothemes/static/demo3/banner2.jpg"}}" /></a></div>
+</div>
+</div>
+</div>
+<div class="box-products special-products">{{widget type="magiccategory/widget_magiccategory" identifier="special-products" template="magiccart/magiccategory/magiccategory.phtml"}}</div>
+<div class="box-products recommendation">{{widget type="magiccategory/widget_magiccategory" identifier="recommendation-for-you" template="magiccart/magiccategory/magiccategory.phtml"}}</div>
+<div class="alo-blog clearfix">{{widget type="blog/slide" title="Latest Posts Blog" categories="1" blocks_count="8" slide="1" controls="1" speed="700" pause="1" row="1" portrait="1" landscape="2" tablet="3" desktop="4" visibleItems="4" marginColumn="30" widthImages="270" heightImages="257"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[block_footer_top]]></title>
+      <identifier><![CDATA[block_footer_top]]></identifier>
+      <content><![CDATA[<div class="row">
+	 <div class="col-sm-3">
+		 <div class="footer-logo">
+			 <a href="#"><img class="img-responsive" alt="logo" src="{{media url="wysiwyg/alothemes/static/logo3.png"}}" /></a>
+		 </div>
+	 </div>
+	<div class="col-sm-6">
+		 <div class="footer-menu">       
+			 <ul>
+				 <li><a href="#">About Us</a></li>
+				 <li><a href="#">Affiliates</a></li>
+				 <li><a href="#">Careers</a></li>
+				 <li><a href="#">Privacy Policy</a></li>
+				 <li><a href="#">Terms of Use</a></li>
+				 <li><a href="#">Contact Us</a></li>
+			 </ul>
+		 </div>
+	 </div>
+	 <div class="col-sm-3">
+		 <div class="footer-social">
+		     <ul class="list-inline">
+				<li><a class="social-link facebook" href="#"><i class="fa fa-facebook"><span class="hidden">facebook</span></i></a></li>
+				<li><a class="social-link pinterest-p" href="#"><i class="fa fa-pinterest-p"><span class="hidden">pinterest</span></i></a></li>
+				<li><a class="social-link vk" href="#"><i class="fa fa-vk"><span class="hidden">fa-vk</span></i></a></li>
+				<li><a class="social-link twitter" href="#"><i class="fa fa-twitter"><span class="hidden">twitter</span></i></a></li>
+				<li><a class="social-link google-plus" href="#"><i class="fa fa-google-plus"><span class="hidden">google-plus</span></i></a></li>
+			</ul>
+		 </div>
+	 </div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[block_footer_bottom]]></title>
+      <identifier><![CDATA[block_footer_bottom]]></identifier>
+      <content><![CDATA[<div class="footer-row footer-center">
+<div class="container">
+<h3>Sign up below for early updates</h3>
+<p>You a Client , large or small, and want to participate in this adventure, please send us an email to support@alothemes.com</p>
+<div class="block-newletter">{{block type="newsletter/subscribe" template="newsletter/subscribe.phtml"}}</div>
+</div>
+</div>
+<div class="footer-row">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-mobile-12 col-xs-6">
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading">Infomation</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<div class="block1 block-content-statick toggle-content">
+<ul class="address-list">
+<li class="feature-icon location first">
+<p class="no-margin"><span class="tit-contain">2046 Blue Spruce Lane Laurel, tetxac, Orton Tolanto, Canada</span></p>
+</li>
+<li class="feature-icon phone">
+<p><span class="tit-contain">0200 410-369-3920</span></p>
+</li>
+<li class="feature-icon email">
+<p><a class="tit-contain" href="#">support@alothemes.com</a></p>
+</li>
+<li class="feature-icon mobile last">
+<p><span class="tit-contain">Hotline: 090 999 8686</span></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3  col-mobile-12 col-xs-6">
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading">Company</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<div class="block-content block-content-statick toggle-content">
+<ul class="bullet">
+<li><a href="#">About Us</a></li>
+<li><a href="#">Testimonials</a></li>
+<li><a href="#">Affiliate Program</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3  col-mobile-12 col-xs-6">
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading">My Account</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<div class="block-content block-content-statick toggle-content">
+<ul class="bullet">
+<li><a href="#">My Orders</a></li>
+<li><a href="#">My Credit Slips</a></li>
+<li><a href="#">My Addresses</a></li>
+<li><a href="#">My Personal Info</a></li>
+<li><a href="#">Specials</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-mobile-12 col-xs-6">
+<div class="collapsible mobile-collapsible">
+<h3 class="block-title heading">Support</h3>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">facebook</span></span>
+<div class="block-content block-content-statick toggle-content">
+<ul class="bullet">
+<li><a href="#">Payments &amp; My Vouchers</a></li>
+<li><a href="#">Saved Cards</a></li>
+<li><a href="#">Shipping Free</a></li>
+<li><a href="#">Cancellation &amp; Returns</a></li>
+<li><a href="#">FAQ &amp; Support Online</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[payment-logo]]></title>
+      <identifier><![CDATA[payment-logo]]></identifier>
+      <content><![CDATA[<div class="footer-payment-logo"><img src="{{media url="wysiwyg/alothemes/static/payment-logo.png"}}" alt="" /></div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[call-us]]></title>
+      <identifier><![CDATA[call-us]]></identifier>
+      <content><![CDATA[<p><a href="#">Call Us: +09 957774334</a></p>
+<p><a class="btn-fb-login" href="#">Login fb</a></p>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Latest Posts Blog]]></title>
+      <identifier><![CDATA[postblock_0]]></identifier>
+      <content><![CDATA[<div class="alo-blog clearfix">{{widget type="blog/slide" title="Latest Posts Blog" categories="1" blocks_count="8" slide="1" controls="1" speed="700" pause="1" row="1" portrait="1" landscape="2" tablet="3" desktop="4" visibleItems="4" marginColumn="30" widthImages="270" heightImages="257"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+  </blocks>
+</root>

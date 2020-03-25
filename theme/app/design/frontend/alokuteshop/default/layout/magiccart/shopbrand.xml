@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+
+    <cms_index_index>
+        <update handle="shopbranddefault" /> 
+<!--         <reference name="content">
+            <block type="shopbrand/widget_brand" name="brand_widget" template="magiccart/shopbrand/brand.phtml" />
+            <block type="shopbrand/widget_shopbrand" name="shopbrand_widget" template="magiccart/shopbrand/shopbrand.phtml" />
+        </reference> -->
+    </cms_index_index>
+    <shopbranddefault>
+        <reference name="head" ifconfig="shopbrand/general/enabled">
+            <action method="addCss"><stylesheet>magiccart/plugin/css/animate.css</stylesheet></action>
+            <action method="addCss"><stylesheet>magiccart/plugin/css/jquery.bxslider.css</stylesheet></action>
+            <action method="addItem" ifconfig="sales/msrp/enabled"><type>skin_js</type><name>js/msrp.js</name></action>
+            <action method="addJs"><script>magiccart/jquery.min.js</script></action>         
+            <action method="addJs"><script>magiccart/jquery.noconflict.js</script></action>
+            <action method="addJs"><script>magiccart/plugin/jquery.bxslider.js</script></action>
+            <action method="addJs"><script>magiccart/magicproduct.js</script></action>
+        </reference>        
+    </shopbranddefault>
+    <shopbrand_index_index>
+        <reference name="content">
+            <block type="shopbrand/brand_link" name="shopbrand_link" template="magiccart/shopbrand/brand/link.phtml"/>
+        </reference>
+    </shopbrand_index_index>
+    <shopbrand_index_product>
+        <reference name="content">
+            <block type="shopbrand/product_list" name="shopbrand_list" template="catalog/product/list.phtml">
+                <block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                    <block type="page/html_pager" name="product_list_toolbar_pager"/>
+                </block>
+				<action method="setColumnCount"><count>4</count></action>
+                <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
+            </block>
+        </reference>
+    </shopbrand_index_product>
+
+    <shopbrand_index_ajax>  
+        <reference name="root">
+            <action method="setTemplate" ifconfig="shopbrand/general/enabled"><template>magiccart/shopbrand/ajax.phtml</template></action>
+            <block type="shopbrand/product_grid" name="shopbrand_grid" template="magiccart/shopbrand/product/grid.phtml" />
+            <block type="shopbrand/product_grid" name="shopbrand_grid_timer" template="magiccart/shopbrand/product/gridtimer.phtml" />
+        </reference>
+    </shopbrand_index_ajax>
+
+    <shopbrand_view_view translate="label">
+        <reference name="content">
+            <block type="shopbrand/brand" name="brand_view" template="magiccart/shopbrand/brand/view.phtml" >
+                <block type="shopbrand/product_list" name="brand_product_list" template="catalog/product/list.phtml">
+                    <block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                        <block type="page/html_pager" name="product_list_toolbar_pager"/>
+                    </block>
+                    <action method="setColumnCount"><count>4</count></action>
+                    <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
+                </block>
+            </block>
+        </reference>
+    </shopbrand_view_view >
+</layout>
+

@@ -1,0 +1,80 @@
+<?php
+/**
+ * Magiccart 
+ * @category 	Magiccart 
+ * @copyright 	Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license 	http://www.magiccart.net/license-agreement.html
+ * @Author: Magiccart<team.magiccart@gmail.com>
+ * @@Create Date: 2014-04-25 13:15:04
+ * @@Modify Date: 2017-08-12 21:31:08
+ * @@Function:
+ */
+?>
+
+<?php
+
+// drawMainHome
+$menu = $this->cfgExt->topmenu;
+if(!$menu['enabled']) return;
+$drawHomeMenu = '';
+$home = $menu['home'];
+if($home) $drawHomeMenu  = $this->drawHomeMenu();
+
+// drawMainMenu vs DrowMobileMenu
+$menuHtml = $this->drawMainMenu();
+$mobileMenu = $menuHtml['mobile'];
+$desktop = $vdesktop = $menuHtml['desktop'];
+
+
+?>
+<?php
+	$rootName = Mage::getModel('catalog/category')->load(Mage::app()->getStore()->getRootCategoryId())->getName();
+	$vmenu = $this->cfgExt->vmenu;
+	$ids  = explode(',', $vmenu['notIncludeNav']);
+	foreach ($ids as $id) {
+		unset($vdesktop[$id]);
+	}
+	$drawMainMenu = $vmenu['mainCat'] ? implode("\n", $vdesktop) : '';
+	// drawExtMenu ExtraMenu
+	$drawExtraMenu = $vmenu['extraCat'] ? $this->drawExtraMenu() : '';
+?>
+<div class="vmagicmenu clearfix">
+    <div class="block-title block-title-vmagicmenu">
+        <strong>
+            <span class="fa fa-bars"></span>
+            <span class="vmagicmenu-subtitle"><?php echo $this->__($rootName); ?></span>
+        </strong>
+    </div>
+    <div class="block-vmagicmenu-content">
+		<ul class="vmagicmenu-narrow clearfix">
+			<?php echo $drawMainMenu ?>
+			<?php echo $drawExtraMenu ?>
+		</ul>
+		<div class="all-cat"><span><?php echo $this->__('All Categories')?></span><span style="display:none"><?php echo $this->__('Close')?></span></div>
+	</div>
+</div>
+<?php
+$ids  = explode(',', $menu['notIncludeNav']);
+foreach ($ids as $id) {
+	unset($desktop[$id]);
+}
+$drawMainMenu = $menu['mainCat'] ? implode("\n", $desktop) : '';
+
+// drawExtMenu ExtraMenu
+$drawExtraMenu = $menu['extraCat'] ? $this->drawExtraMenu() : '';
+?>
+<?php $sticker = $menu['sticker'] ? 'sticker' : ''; ?>
+<div class="magicmenu clearfix">
+	<ul class="nav-desktop <?php echo $sticker ?>">
+		<?php echo $drawHomeMenu ?>
+		<?php echo $drawMainMenu ?>
+		<?php echo $drawExtraMenu ?>
+	</ul>
+</div>
+<div class="nav-mobile">
+	<h3 class="mobi-title"><?php echo $this->__('Categories')?></h3>
+	<ul>
+		<?php echo $mobileMenu ?>
+		<?php echo $drawExtraMenu ?>
+	</ul>
+</div>

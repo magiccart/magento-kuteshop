@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: Magiccart <team.magiccart@gmail.com>
+ * @@Create Date: 2014-03-15 23:15:05
+ * @@Modify Date: 2015-12-22 14:54:35
+ * @@Function:
+ */ -->
+<config>
+    <modules>
+        <Magiccart_Megashop>
+            <version>0.1.5</version>
+        </Magiccart_Megashop>
+    </modules>
+    <frontend>
+        <routers>
+            <megashop>
+                <use>standard</use>
+                <args>
+                    <module>Magiccart_Megashop</module>
+                    <frontName>megashop</frontName>
+                </args>
+            </megashop>
+        </routers>
+        <layout>
+            <updates>
+                <megashop>
+                    <file>magiccart/megashop.xml</file>
+                </megashop>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+<!--             <megashop>
+                <use>admin</use>
+                <args>
+                    <module>Magiccart_Megashop</module>
+                    <frontName>megashop</frontName>
+                </args>
+            </megashop> -->
+            <adminhtml>
+                <args>
+                    <modules>
+                        <megashop after="Mage_Adminhtml">Magiccart_Megashop</megashop>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <global>
+        <models>
+            <megashop>
+                <class>Magiccart_Megashop_Model</class>
+                <resourceModel>megashop_resource</resourceModel>
+            </megashop>
+            <megashop_resource>
+                <class>Magiccart_Megashop_Model_Resource</class>
+                <!-- <deprecatedNode>megashop_model_mysql4</deprecatedNode> -->
+            </megashop_resource>
+        </models>
+        <resources>
+            <megashop_setup>
+                <setup>
+                    <module>Magiccart_Megashop</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </megashop_setup>
+            <megashop_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </megashop_write>
+            <megashop_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </megashop_read>
+        </resources>
+        <blocks>
+            <megashop>
+                <class>Magiccart_Megashop_Block</class>
+            </megashop>
+        </blocks>
+        <helpers>
+            <megashop>
+                <class>Magiccart_Megashop_Helper</class>
+            </megashop>
+        </helpers>
+    </global>
+    <default>
+        <megashop>
+            <general>
+                <enabled>1</enabled>
+                <jquery>1</jquery>
+                <rootFilter>0</rootFilter>
+            </general>
+        </megashop>
+    </default>
+</config>
+

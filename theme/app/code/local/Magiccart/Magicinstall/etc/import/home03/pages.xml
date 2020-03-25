@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root>
+  <pages>
+    <cms_block>
+      <title><![CDATA[Kute Shop Demo3]]></title>
+      <root_template><![CDATA[one_column]]></root_template>
+      <identifier><![CDATA[kute-shop-demo3]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<!--<p>Kute Shop Demo3</p>-->]]></content>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+  </pages>
+</root>
